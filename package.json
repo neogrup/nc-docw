@@ -1,0 +1,47 @@
+{
+  "description": "Polymer component to display document with more info",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "nc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NEOGRUP/nc-docw"
+  },
+  "name": "@neogrup/nc-docw",
+  "version": "1.0.1",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
+  },
+  "main": "nc-docw.js",
+  "author": "marcel.miguel@neogrup.com",
+  "license": "MIT",
+  "dependencies": {
+    "@neogrup/nc-doc": "^2.1.18",
+    "@neogrup/nc-icons": "^1.0.6",
+    "@polymer/app-localize-behavior": "^3.0.0",
+    "@polymer/iron-ajax": "^3.0.0",
+    "@polymer/iron-icons": "^3.0.0",
+    "@polymer/iron-iconset-svg": "^3.0.0",
+    "@polymer/iron-list": "^3.0.2",
+    "@polymer/iron-pages": "^3.0.1",
+    "@polymer/paper-button": "^3.0.0",
+    "@polymer/paper-card": "^3.0.0",
+    "@polymer/paper-dialog": "^3.0.0",
+    "@polymer/paper-icon-button": "^3.0.0",
+    "@polymer/paper-tabs": "^3.1.0",
+    "@polymer/polymer": "^3.3.0",
+    "@vaadin/vaadin-grid": "^5.9.1",
+    "accounting-js": "^1.1.1",
+    "moment": "^2.24.0",
+    "web-animations-js": "^2.3.2"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.1.0",
+    "@webcomponents/webcomponentsjs": "^2.2.10"
+  }
+}

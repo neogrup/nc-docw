@@ -1,0 +1,101 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2017 Neo
+-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <title>nc-docw demo</title>
+
+
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <script type="module">
+    import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+    import '@polymer/iron-demo-helpers/demo-snippet';
+  </script>
+
+  <script type="module" src="../nc-docw.js"></script>
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      div{
+        height: 50%;
+        width: 500px;
+      }
+    </style>
+  </custom-style>
+  
+</head>
+<body>
+    <h3>POS nc-docw demo</h3>
+    <demo-snippet>
+      <template>
+        <demo-nc-doc-pos></demo-nc-doc-pos>
+      </template>
+    </demo-snippet>
+
+  <script type="module">
+    import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+    import '@polymer/iron-ajax/iron-ajax.js';
+
+    class DemoNcDocPos extends PolymerElement {
+
+      static get template() {
+        return html`
+          <style>
+            :host{
+              --app-accent-color: #FF9800;
+            }
+          </style>
+
+          <iron-ajax id="getDoc"
+              auto
+              url="data/pos.json"
+              method="get"
+              handle-as="json"
+              last-response="{{dataDoc}}">
+          </iron-ajax>
+            
+          <iron-ajax id="getTicketLogFromList" 
+            auto  
+            method="get"  
+            url="data/history.json"
+            handle-as="json" 
+            last-response="{{ticketLogFromListData}}">
+          </iron-ajax>
+          
+          <div>
+            <nc-docw
+                id="doc"
+                data="[[dataDoc]]"
+                ticket-log-from-list-data="[[ticketLogFromListData]]"
+                language="es"
+                show-line-delivery-order
+                show-line-group-info
+                show-line-production-status
+                show-line-pack-mandatory
+                show-packs-reduced
+                show-amounts-including-taxes 
+                show-rescue-container
+
+                show-ticket-info-payments
+                show-ticket-info-customer
+                show-customer-loyalty
+                show-ticket-info-log>
+            </nc-docw>
+          </div>
+
+        `;
+      }
+
+    }
+    window.customElements.define('demo-nc-doc-pos', DemoNcDocPos);
+  </script> 
+
+</body>
+</html>

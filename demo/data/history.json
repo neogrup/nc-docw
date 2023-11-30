@@ -1,0 +1,117 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-11-29T17:01:21.9714168+01:00",
+    "data": [
+        {
+            "operation": "get",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T17:01:21.7877851+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "get",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:34:00.3613108+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "unlock",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:28:20.6975011+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "split-finish",
+            "code": "600003",
+            "subCode": "",
+            "name": "there is no destination order to finish",
+            "time": "2023-11-29T11:28:18.645469+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "split-start",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:28:17.643918+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "split-list",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:25:29.0686186+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "unlock",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:25:05.9659057+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "insertLine",
+            "code": "600003",
+            "subCode": "R00049",
+            "name": "Caña que caña",
+            "time": "2023-11-29T11:25:04.4154637+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "insertLine",
+            "code": "600003",
+            "subCode": "R00001",
+            "name": "Coca Cola lata2",
+            "time": "2023-11-29T11:25:03.4765619+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        },
+        {
+            "operation": "new",
+            "code": "600003",
+            "subCode": "",
+            "name": "",
+            "time": "2023-11-29T11:25:02.2630266+01:00",
+            "user": "ACS",
+            "userName": "Alejando Cintas Sánchez",
+            "error": false,
+            "till": "Z01"
+        }
+    ],
+    "error": null
+}

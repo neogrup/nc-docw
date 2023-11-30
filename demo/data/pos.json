@@ -1,0 +1,313 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-11-29T18:03:34.8274454+01:00",
+    "data": {
+        "version": "0.3",
+        "type": "ticket",
+        "subType": "CON",
+        "order": "600003",
+        "date": "20231129",
+        "shopCode": "R002",
+        "shopName": "Restaurante ' Granada",
+        "status": "opened",
+        "statusExplain": "opened",
+        "comments": {
+            "public": "hola cacracola"
+        },
+        "sysData": {
+            "created": "2023-11-29T11:25:02Z",
+            "createdBy": "78968761D",
+            "createdByName": "Alejando Cintas Sánchez",
+            "edited": "2023-11-29T17:57:23.51Z",
+            "editedBy": "78968761D",
+            "editedByName": "Alejando Cintas Sánchez",
+            "editing": "0001-01-01T00:00:00Z",
+            "sent": "2023-11-29T17:29:58Z"
+        },
+        "buyerParty": {
+            "code": "100050",
+            "name": "Marcel Creus",
+            "postalAddress": {
+                "detail": "c/Sardenya, 229 Barcelona",
+                "city": "Barcelona",
+                "postalCode": "08013",
+                "state": "",
+                "country": "ES",
+                "countryiso30661": ""
+            },
+            "loyalty": {},
+            "taxIdentification": {
+                "exemption": "R"
+            },
+            "contact": {
+                "email": "marcel.miguel@neogrup.com"
+            },
+            "totalClients": 2
+        },
+        "fiscal": {
+            "currency": {
+                "code": "XAF",
+                "symbol": "₣",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "taxes": [
+                {
+                    "id": "IVA",
+                    "ruleId": "IVA21",
+                    "rate": 21,
+                    "baseAmount": -0.41,
+                    "taxAmount": -0.09,
+                    "totalAmount": -0.5
+                },
+                {
+                    "id": "IVA",
+                    "ruleId": "IVA10",
+                    "rate": 10,
+                    "baseAmount": 0.95,
+                    "taxAmount": 0.1,
+                    "totalAmount": 1.05
+                }
+            ],
+            "totals": {
+                "grossAmount": 0.54,
+                "netAmount": 0.54,
+                "totalAmount": 0.55,
+                "deliveredAmount": 0.5,
+                "pendingAmount": 0.05,
+                "subTotal": 0.55
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 0.5,
+                    "mean": "MET",
+                    "dueDate": "0001-01-01T00:00:00Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "currency": "EUR",
+                    "currencySymbol": "₣",
+                    "drawer": "R00401",
+                    "amountCurrency": 0.5,
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "idTip": -1,
+                    "mean": "MET",
+                    "meanName": "Metálico",
+                    "total": 0.5,
+                    "in": 0.5,
+                    "currency": "EUR",
+                    "currencySymbol": "₣",
+                    "config": {
+                        "code": "MET",
+                        "name": "Metálico",
+                        "urlImage": "imgpay/R002/Z01/PagosCobros/Metalico.png",
+                        "urlImageWorking": "imgpay/R002/Z01/PagosCobros/Metalico.gif",
+                        "behavior": {
+                            "askAmount": "S"
+                        }
+                    }
+                }
+            ],
+            "drawer": "R00401",
+            "drawerName": "Cajón 01",
+            "closedTime": "0001-01-01T00:00:00Z",
+            "delivered": "N",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "refundDoc": "0",
+            "refundType": "0",
+            "serviceDate": "0001-01-01T00:00:00Z",
+            "fiscalType": "GUIP"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "R00001",
+                    "name": "Coca Cola lata2",
+                    "price": -0.5,
+                    "basePrice": -0.4132,
+                    "tariffPrice": -0.5
+                },
+                "qty": 1,
+                "unitOfMeasure": "UD",
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": -0.41,
+                "netAmount": -0.4132,
+                "totalAmount": -0.5,
+                "taxRuleId": "IVA21",
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "ruleId": "IVA21",
+                        "rate": 21,
+                        "baseAmount": -0.4132,
+                        "taxAmount": -0.0868,
+                        "totalAmount": -0.5
+                    }
+                ],
+                "comments": {},
+                "status": "active",
+                "businessSource": "B",
+                "rule": "EPL",
+                "startTime": "2023-11-29T11:25:03.457Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "group": "user,time",
+                "kitchen": {
+                    "producedQty": 1,
+                    "producedTime": "2023-11-29T11:25:05Z",
+                    "status": "FI",
+                    "deliveryOrder": 1,
+                    "deliveryName": "Bebidas",
+                    "noteGroup": "0000000003"
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "2023-11-29T11:25:03.457Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S",
+                "agent": "78968761D"
+            },
+            {
+                "id": 2,
+                "product": {
+                    "id": "R00049",
+                    "name": "Caña que caña",
+                    "price": 1.05,
+                    "basePrice": 0.9545,
+                    "tariffPrice": 1.05
+                },
+                "qty": 1,
+                "unitOfMeasure": "UD",
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0.95,
+                "netAmount": 0.9545,
+                "totalAmount": 1.05,
+                "taxRuleId": "IVA10",
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "ruleId": "IVA10",
+                        "rate": 10,
+                        "baseAmount": 0.9545,
+                        "taxAmount": 0.0954,
+                        "totalAmount": 1.0499
+                    }
+                ],
+                "comments": {},
+                "status": "active",
+                "businessSource": "B",
+                "rule": "EPL",
+                "startTime": "2023-11-29T11:25:04.403Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedQty": 1,
+                    "producedTime": "2023-11-29T11:25:05Z",
+                    "status": "FI",
+                    "deliveryOrder": 1,
+                    "deliveryName": "Bebidas",
+                    "noteGroup": "0000000009"
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "2023-11-29T11:25:04.403Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S",
+                "agent": "78968761D"
+            }
+        ],
+        "discounts": [
+            {
+                "code": "DTVP",
+                "name": "Dto. de pie 10.00%",
+                "rate": 10,
+                "baseAmount": 1.27,
+                "discountAmount": 0.13999999999999999,
+                "discountAmountWithTaxes": 0.15,
+                "grossAmount": 1.41
+            }
+        ],
+        "operator": "78968761D",
+        "attendedBy": "78968761D",
+        "attendedByName": "ACS",
+        "location": {
+            "zone": "R002BAR",
+            "zoneName": "Barra",
+            "spot": "09",
+            "spotName": "Mesa 9"
+        },
+        "tariff": {
+            "code": "R001",
+            "name": "Venta Rest. Barra",
+            "date": "20231129"
+        },
+        "owner": "Z01",
+        "lock": {
+            "owner": "Z01",
+            "status": "CU",
+            "time": "2023-11-29T17:57:23.51Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 2,
+            "soldProducts": 2,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "CancelacionCobro",
+                "value": "1"
+            },
+            {
+                "name": "DIVISIONDE",
+                "value": "600002"
+            },
+            {
+                "name": "IDOrder",
+                "value": "P003"
+            },
+            {
+                "name": "Habitacion",
+                "value": "479"
+            }
+        ],
+        "production": {
+            "printed": "S",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

@@ -1,0 +1,196 @@
+{
+	"apiVersion": "1",
+	"systemTime": "2019-03-20T15:16:29.8772708+01:00",
+	"data": {
+		"attendedBy": "47275733S",
+		"attendedByName": "EPL",
+		"buyerParty": {
+			"code": "00000",
+			"name": "Contado",
+			"totalClients": 0
+		},
+		"date": "20190320",
+		"discounts": [{
+			"baseAmount": 11.24,
+			"code": "DTVP",
+			"discountAmount": 2.25,
+			"id": "8",
+			"name": "Dto. de pie 20,00%",
+			"rate": 20
+		}],
+		"fiscal": {
+			"totals": {
+				"grossAmount": 11.24,
+				"netAmount": 8.99,
+				"totalAmount": 8.99
+			}
+		},
+		"lastModifiedLine": 7,
+		"lines": [{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 1.99,
+			"grossQty": 1,
+			"id": 1,
+			"netAmount": 1.99,
+			"product": {
+				"basePrice": 1.84,
+				"id": "R00001",
+				"name": "Coca Cola lata (la c",
+				"price": 1.99
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA8"
+		},
+		{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 2.7,
+			"grossQty": 1,
+			"id": 2,
+			"netAmount": 2.7,
+			"product": {
+				"basePrice": 2.5,
+				"id": "R00094",
+				"name": "Patatas bravas",
+				"price": 2.7
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA8"
+		},
+		{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 0.95,
+			"grossQty": 1,
+			"id": 3,
+			"netAmount": 0.95,
+			"product": {
+				"basePrice": 0.88,
+				"id": "R00093",
+				"name": "Aceitunas",
+				"price": 0.95
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA8"
+		},
+		{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 2,
+			"grossQty": 1,
+			"id": 4,
+			"netAmount": 2,
+			"product": {
+				"basePrice": 1.85,
+				"id": "R00096",
+				"name": "Croquetas",
+				"price": 2
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA8"
+		},
+		{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 1.1,
+			"grossQty": 1,
+			"id": 5,
+			"netAmount": 1.1,
+			"product": {
+				"basePrice": 1.02,
+				"id": "R00125",
+				"name": "Napolitana crema",
+				"price": 1.1
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA8"
+		},
+		{
+			"agent": "47275733S",
+			"businessSource": "B",
+			"elementPack": "0",
+			"format": {
+				"factor": 1,
+				"qty": 1
+			},
+			"grossAmount": 2.5,
+			"grossQty": 1,
+			"id": 6,
+			"netAmount": 2.5,
+			"product": {
+				"basePrice": 2.27,
+				"id": "R00056",
+				"name": "Café con leche NC_",
+				"price": 2.5
+			},
+			"qty": 1,
+			"relLine": 0,
+			"taxRuleId": "IVA10"
+		}],
+		"location": {
+			"spot": "09",
+			"zone": "R002BAR"
+		},
+		"operator": "47275733S",
+		"order": "110001",
+		"owner": "CAJA03",
+		"shopCode": "R002",
+		"status": "opened",
+		"sysData": {
+			"created": "2019-03-20T14:57:18.000",
+			"createdBy": "47275733S",
+			"edited": "2019-03-20T15:16:29.870",
+			"editedBy": "47275733S"
+		},
+		"tariff": {
+			"attendedBy": "47275733S",
+			"attendedByName": "EPL",
+			"code": "R001",
+			"date": "20190320",
+			"location": {
+				"spot": "09",
+				"zone": "R002BAR"
+			},
+			"operator": "47275733S",
+			"order": "110001",
+			"owner": "CAJA03",
+			"shopCode": "R002",
+			"type": "ticket",
+			"version": "0.15"
+		},
+		"type": "ticket",
+		"version": "0.15"
+	},
+	"error": null
+}

@@ -1,0 +1,292 @@
+{
+  "apiVersion": "1",
+  "systemTime": "2023-11-30T12:31:28.5950474+01:00",
+  "data": {
+      "version": "0.3",
+      "type": "ticket",
+      "subType": "CON",
+      "order": "600004",
+      "date": "20231130",
+      "shopCode": "R002",
+      "shopName": "Restaurante ' Granada",
+      "status": "closed",
+      "statusExplain": "closedNotDelivered",
+      "sysData": {
+          "created": "2023-11-30T12:31:24Z",
+          "createdBy": "47941458M",
+          "createdByName": "Adría Martínez",
+          "edited": "2023-11-30T12:31:22.89Z",
+          "editedBy": "47941458M",
+          "editedByName": "Adría Martínez",
+          "editing": "0001-01-01T00:00:00Z",
+          "sent": "2023-11-30T12:31:22Z"
+      },
+      "buyerParty": {
+          "code": "00000",
+          "name": "Contado",
+          "postalAddress": {
+              "detail": "",
+              "city": "",
+              "postalCode": "",
+              "state": "",
+              "country": "",
+              "countryiso30661": ""
+          },
+          "loyalty": {},
+          "taxIdentification": {},
+          "contact": {},
+          "totalClients": -2
+      },
+      "fiscal": {
+          "documentSerie": "FR 230099Z01",
+          "documentNumber": "0000020",
+          "currency": {
+              "code": "EUR",
+              "decimals": 0,
+              "decimalsUnitPrice": 0,
+              "decimalsLineAmount": 0
+          },
+          "quantity": {
+              "decimals": 0
+          },
+          "priceWithTaxes": "S",
+          "taxes": [
+              {
+                  "id": "IVA",
+                  "ruleId": "IVASTD",
+                  "rate": 21,
+                  "baseAmount": -7.02,
+                  "taxAmount": -1.48,
+                  "totalAmount": -8.5
+              }
+          ],
+          "totals": {
+              "grossAmount": -7.02,
+              "netAmount": -7.02,
+              "totalAmount": -8.5,
+              "deliveredAmount": -8.5,
+              "subTotal": -8.5
+          },
+          "payments": [
+              {
+                  "id": 1,
+                  "amount": -8.5,
+                  "mean": "MET",
+                  "dueDate": "0001-01-01T00:00:00Z",
+                  "sysData": {
+                      "created": "0001-01-01T00:00:00Z",
+                      "edited": "0001-01-01T00:00:00Z",
+                      "editing": "0001-01-01T00:00:00Z",
+                      "sent": "0001-01-01T00:00:00Z"
+                  },
+                  "currency": "EUR",
+                  "drawer": "R00401",
+                  "amountCurrency": -8.5,
+                  "affectPrice": "S",
+                  "Status": "closed"
+              }
+          ],
+          "paymentsSummary": [
+              {
+                  "id": 1,
+                  "idOut": -1,
+                  "idTip": -1,
+                  "mean": "MET",
+                  "meanName": "Metálico",
+                  "total": -8.5,
+                  "out": 8.5,
+                  "status": "closed",
+                  "config": {
+                      "code": "MET",
+                      "name": "Metálico",
+                      "urlImage": "imgpay/R002/Z01/PagosCobros/Metalico.png",
+                      "urlImageWorking": "imgpay/R002/Z01/PagosCobros/Metalico.gif",
+                      "behavior": {
+                          "askAmount": "S"
+                      }
+                  }
+              }
+          ],
+          "owner": "Z01",
+          "drawer": "R00401",
+          "drawerName": "Cajón 01",
+          "closedTime": "2023-11-30T12:31:24Z",
+          "delivered": "S",
+          "deliveredTime": "2023-11-30T12:31:24Z",
+          "refundDoc": "0",
+          "refundType": "0",
+          "print": "S",
+          "serviceDate": "0001-01-01T00:00:00Z",
+          "hash": "raJCnx/LGoFBs/hrVw5ia+OTlvEFjl+UITCNVQHKmrmDkwAXVLgwMaERp5LPqrl+o+GU/tOQNM3Jwzpq/47rKNfOqHdtNjxRui6irOgW2Vuhjv51c6UZ06jA5fQPoyP06wJY8xA3llZerzhc1ezBfOddSv0L74IENZ9+p0+fgXxy2DjsbOtD0ObUh6L7mgV+lLYgqiS7pQDx5+IWAqrf+1ljdf4SRvXQrvw5QJq3ZS5EfVTimbQ1wW7Ts8cHIIA75zy+I1KnAVVtg5hImMkqVOA4obKdu7uTRc8qFcVl8A4YBLp/eP2j1M6b1BfPxoX57tKFlMFnu1FksuiSY9xAt5DVl65LNtT/fp0HRalGf+fKu0EqerW8srcAiYQHiQZNTV3CPLPLUO1kQh8lDS9LMgf8uIXWQ41Lj4rBWnUQNjNN/HsPACrXDZMGKr1T1vJTcfsNDt4Tt4QqXUXLj7rtQjwiCxGLIjFbTct7b5Tlp2gT3n0PyL85AdszH8FCay2J0fyV7tfCfDdGMhrnS5nk0FVnUtvhndYXDxX0l5c2BufyUw3AIUKqsSunzukpHiaJl9mVQXxNel0G2MTmIrwRHOJjjfgNJNNZN/F16lnW7KIH/EESj9eFqtfXI8ynxBvTBs7yxtF+eqaCi0Ser2iso4+RLPj3ITUvL8WJOVf9yGg=",
+          "link": "https://tbai.prep.gipuzkoa.eus/qr/?id=TBAI-B62880042-301123-raJCnx%2FLGoFBs-012\u0026s=FR%20230099Z01\u0026nf=20\u0026i=-8.50\u0026cr=217",
+          "fiscalType": "GUIP",
+          "fiscalID": "TBAI-B62880042-301123-raJCnx/LGoFBs-012"
+      },
+      "lines": [
+          {
+              "id": 1,
+              "product": {
+                  "id": "R00112",
+                  "name": "Pizza 4 quesos",
+                  "price": 4.25,
+                  "basePrice": 3.5124,
+                  "tariffPrice": 4.25
+              },
+              "qty": -1,
+              "unitOfMeasure": "UD",
+              "format": {
+                  "factor": 1,
+                  "qty": -1
+              },
+              "grossQty": -1,
+              "grossAmount": -3.51,
+              "netAmount": -3.5124,
+              "totalAmount": -4.25,
+              "taxRuleId": "IVASTD",
+              "taxes": [
+                  {
+                      "id": "IVA",
+                      "ruleId": "IVASTD",
+                      "rate": 21,
+                      "baseAmount": -3.5124,
+                      "taxAmount": -0.7376,
+                      "totalAmount": -4.25
+                  }
+              ],
+              "comments": {},
+              "status": "active",
+              "businessSource": "S",
+              "startTime": "0001-01-01T00:00:00Z",
+              "endTime": "0001-01-01T00:00:00Z",
+              "group": "user,time",
+              "kitchen": {
+                  "producedQty": 1,
+                  "producedTime": "2023-11-30T12:30:01Z",
+                  "status": "FI",
+                  "deliveryOrder": 3,
+                  "deliveryName": "Primeros",
+                  "noteGroup": "0000000002"
+              },
+              "sysData": {
+                  "created": "0001-01-01T00:00:00Z",
+                  "edited": "2023-11-30T12:29:54.737Z",
+                  "editing": "0001-01-01T00:00:00Z",
+                  "sent": "0001-01-01T00:00:00Z"
+              },
+              "affectPrice": "S",
+              "agent": "47941458M"
+          },
+          {
+              "id": 2,
+              "product": {
+                  "id": "R00118",
+                  "name": "Pizza 4 estaciones",
+                  "price": 4.25,
+                  "basePrice": 3.5124,
+                  "tariffPrice": 4.25
+              },
+              "qty": -1,
+              "unitOfMeasure": "UD",
+              "format": {
+                  "factor": 1,
+                  "qty": -1
+              },
+              "grossQty": -1,
+              "grossAmount": -3.51,
+              "netAmount": -3.5124,
+              "totalAmount": -4.25,
+              "taxRuleId": "IVASTD",
+              "taxes": [
+                  {
+                      "id": "IVA",
+                      "ruleId": "IVASTD",
+                      "rate": 21,
+                      "baseAmount": -3.5124,
+                      "taxAmount": -0.7376,
+                      "totalAmount": -4.25
+                  }
+              ],
+              "comments": {},
+              "status": "active",
+              "businessSource": "S",
+              "startTime": "0001-01-01T00:00:00Z",
+              "endTime": "0001-01-01T00:00:00Z",
+              "kitchen": {
+                  "producedQty": 1,
+                  "producedTime": "2023-11-30T12:30:01Z",
+                  "status": "FI",
+                  "deliveryOrder": 3,
+                  "deliveryName": "Primeros",
+                  "noteGroup": ""
+              },
+              "sysData": {
+                  "created": "0001-01-01T00:00:00Z",
+                  "edited": "2023-11-30T12:29:55.45Z",
+                  "editing": "0001-01-01T00:00:00Z",
+                  "sent": "0001-01-01T00:00:00Z"
+              },
+              "affectPrice": "S",
+              "agent": "47941458M"
+          }
+      ],
+      "operator": "47941458M",
+      "attendedBy": "47941458M",
+      "attendedByName": "AMS",
+      "location": {
+          "zone": "R002BAR",
+          "zoneName": "Barra",
+          "spot": "10",
+          "spotName": "Mesa 10"
+      },
+      "tariff": {
+          "code": "R001",
+          "name": "Venta Rest. Barra",
+          "date": "20231130"
+      },
+      "owner": "Z01",
+      "lock": {
+          "owner": "Z01",
+          "status": "FI",
+          "time": "2023-11-30T12:31:22.89Z"
+      },
+      "lastModifiedLine": 0,
+      "stats": {
+          "printProformaCount": 0,
+          "printInvoiceCount": 0,
+          "deliveredProducts": -2,
+          "soldProducts": -2,
+          "producedProductsPF": 0,
+          "noProforma": "N"
+      },
+      "properties": [
+          {
+              "name": "CentroAbonado",
+              "value": "R002"
+          },
+          {
+              "name": "IDOrder",
+              "value": "P002"
+          },
+          {
+              "name": "JornadaAbonado",
+              "value": "20231130"
+          },
+          {
+              "name": "NumeroAbonado",
+              "value": "600002"
+          },
+          {
+              "name": "NumFactOriginal",
+              "value": "FS 230099Z01/0000255"
+          }
+      ],
+      "production": {
+          "printed": "S",
+          "pager": {
+              "id": "",
+              "assignTime": "0001-01-01T00:00:00Z"
+          }
+      }
+  },
+  "error": null
+}

@@ -5,7 +5,7 @@ import 'moment/src/locale/ca.js';
 import {formatMoney} from 'accounting-js';
 
 /* @polymerMixin */
-let ncDocBehavior = (base) =>
+let ncDocWBehavior = (base) =>
   class extends base {
     constructor() {
       super();
@@ -149,4 +149,4 @@ let ncDocBehavior = (base) =>
     }
     
   };
-  export const MixinDoc = dedupingMixin(ncDocBehavior);
+  export const MixinDoc = dedupingMixin(ncDocWBehavior);

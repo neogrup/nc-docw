@@ -13,7 +13,6 @@ import '@vaadin/vaadin-grid/vaadin-grid.js';
 import '@vaadin/vaadin-grid/theme/lumo/vaadin-grid.js';
 import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
 import '@neogrup/nc-icons/nc-icons.js';
-import '@polymer/iron-icons/editor-icons.js';
 import '@polymer/iron-icons/device-icons.js';
 import '@polymer/iron-icons/maps-icons.js';
 import '@polymer/iron-icons/social-icons.js';
@@ -36,6 +35,15 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           font-size: var(--nc-doc-font-size);
         }
 
+        paper-tabs{
+          --paper-tabs-selection-bar-color: var(--app-accent-color);
+          background-color: var(--app-tabs-color);
+          color: var(--app-primary-color);
+          border-bottom: 1px solid #BDBDBD;
+          margin-top: 0px;
+          border-bottom: none;
+        }
+
         .line-dialog-actions {
           /* @apply --layout-horizontal; */
           /* @apply --layout-center; */
@@ -51,11 +59,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         div.line-dialog-actions paper-icon-button{
           padding: 2px;
           margin: 5px
-        }
-
-        paper-tabs {
-          margin-top: 0px;
-          border-bottom: none;
         }
 
         iron-icon {
@@ -77,7 +80,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         .content{
           margin-top: 20px;
           padding: 0 10px;
-          height: calc(100% - var(--div-buttons-height));
+          height: calc(100% - 50px);
           overflow: auto;
         }
 
@@ -192,7 +195,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       <nc-icons></nc-icons>
 
       <div class="info-ticket-container" on-track="handleTrack" >
-        <paper-tabs selected="{{selectedTab}}" _scrollable _fit-container noink attr-for-selected="key">          
+        <paper-tabs selected="{{selectedTab}}" scrollable fit-container noink attr-for-selected="key">          
           <paper-tab key="ticket">{{localize('DOCW_TAB_TICKET')}}</paper-tab> 
           <paper-tab key="basic">{{localize('DOCW_TAB_BASIC')}}</paper-tab> 
           <template is="dom-if" if="{{showTicketInfoCustomer}}">
@@ -521,6 +524,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           </iron-pages>
         </div>
       </div>  
+      
     `;
   }
 
@@ -624,9 +628,10 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
   connectedCallback() {
     super.connectedCallback();
     this.useKeyIfMissing = true;
+    
+    let path = import.meta.url.substr(0,import.meta.url.lastIndexOf('/'));
 
-    this.loadResources(this.resolveUrl('./static/translations.json'));
-    //this.loadResources(this.resolveUrl('../static/translations.json')); // TODO Just for demo purposes !
+    this.loadResources(path+'/./static/translations.json');
   }
 
   handleTrack(e){
@@ -1002,5 +1007,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     //this.$.getTicketLog.generateRequest();
     // TODO get log when clicked
   }
+  
 }
 window.customElements.define('nc-docw', NcDocW);

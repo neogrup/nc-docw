@@ -55,7 +55,7 @@ Copyright (c) 2017 Neo
 
           <iron-ajax id="getDoc"
               auto
-              url="data/pos.json"
+              url="data/pos-creditnote.json"
               method="get"
               handle-as="json"
               last-response="{{dataDoc}}">
@@ -69,7 +69,7 @@ Copyright (c) 2017 Neo
             last-response="{{ticketLogFromListData}}">
           </iron-ajax>
           
-          <div>
+          <div style="height: 600px;width: 100%;" >
             <nc-docw
                 id="doc"
                 data="[[dataDoc]]"
@@ -93,6 +93,9 @@ Copyright (c) 2017 Neo
         `;
       }
 
+      connectedCallback(){
+        super.connectedCallback();
+      }
     }
     window.customElements.define('demo-nc-doc-pos', DemoNcDocPos);
   </script> 

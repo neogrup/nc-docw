@@ -78,7 +78,8 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         }
 
         .content{
-          padding: 0 10px;
+          margin-top: 20px;
+          /*padding: 0 10px;*/
           height: calc(100% - 50px);
           overflow: auto;
         }

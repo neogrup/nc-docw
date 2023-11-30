@@ -190,7 +190,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       </style>
       
       <nc-icons></nc-icons>
-      
+
       <div class="info-ticket-container" on-track="handleTrack" >
         <paper-tabs selected="{{selectedTab}}" _scrollable _fit-container noink attr-for-selected="key">          
           <paper-tab key="ticket">{{localize('DOCW_TAB_TICKET')}}</paper-tab> 
@@ -626,7 +626,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     this.useKeyIfMissing = true;
 
     this.loadResources(this.resolveUrl('./static/translations.json'));
-    this.loadResources(this.resolveUrl('../static/translations.json')); // TODO Just for demo purposes !
+    //this.loadResources(this.resolveUrl('../static/translations.json')); // TODO Just for demo purposes !
   }
 
   handleTrack(e){

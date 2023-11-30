@@ -1,4 +1,4 @@
-## &lt;nc-doc&gt;
+## &lt;nc-docw&gt;
 
 `nc-docw` Polymer component to display a document (header, lines, footer...) and extra info in tabs
 

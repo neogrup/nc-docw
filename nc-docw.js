@@ -204,7 +204,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           <template is="dom-if" if="{{showTicketInfoPayments}}">
             <paper-tab key="payments">{{localize('DOCW_TAB_PAYMENTS')}}</paper-tab>
           </template>
-          <template is="dom-if" if="{{showTicketInfoLog)}}">
+          <template is="dom-if" if="{{showTicketInfoLog}}">
             <paper-tab key="log">{{localize('DOCW_TAB_HISTORY')}}</paper-tab>
           </template>
         </paper-tabs>
@@ -603,12 +603,11 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       },
       showTicketInfoPayments: {
         type: Boolean,
-        value: true
+        value: false
       },
       showTicketInfoLog: {
         type: Boolean,
-        value: false,
-        notify: true
+        value: false
       },
       showPacksReduced: {
         type: Boolean,

@@ -42,6 +42,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           border-bottom: 1px solid #BDBDBD;
           margin-top: 0px;
           border-bottom: none;
+          /*margin-bottom: 20px;*/ /*causes reduce margin and show scroll !*/
         }
 
         .line-dialog-actions {
@@ -78,7 +79,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         }
 
         .content{
-          margin-top: 20px;
           /*padding: 0 10px;*/
           height: calc(100% - 50px);
           overflow: auto;
@@ -195,7 +195,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       <nc-icons></nc-icons>
 
       <div class="info-ticket-container" on-track="handleTrack" >
-        <paper-tabs selected="{{selectedTab}}" scrollable fit-container noink attr-for-selected="key">          
+        <paper-tabs selected="{{selectedTab}}" scrollable align-bottom fit-container attr-for-selected="key">          
           <paper-tab key="ticket">{{localize('DOCW_TAB_TICKET')}}</paper-tab> 
           <paper-tab key="basic">{{localize('DOCW_TAB_BASIC')}}</paper-tab> 
           <template is="dom-if" if="{{showTicketInfoCustomer}}">
@@ -218,11 +218,11 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                   show-doc-header
                   show-doc-footer
                   show-doc-lines
-                  show-line-delivery-order="[[ticketShowLineDeliveryOrder]]"
-                  show-line-group-info="[[ticketShowLineGroupInfo]]"
-                  show-line-production-status="[[ticketShowLineProductionStatus]]"
-                  show-line-pack-mandatory="[[ticketShowLinePackMandatory]]"
-                  show-packs-reduced="[[ticketShowPacksReduced]]"
+                  show-line-delivery-order="[[showLineDeliveryOrder]]"
+                  show-line-group-info="[[showLineGroupInfo]]"
+                  show-line-production-status="[[showLineProductionStatus]]"
+                  show-line-pack-mandatory="[[showLinePackMandatory]]"
+                  show-packs-reduced="[[showPacksReduced]]"
                   show-amounts-including-taxes>
               </nc-doc>
             </div>
@@ -538,6 +538,27 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         observer: '_dataChanged',
       },
       // nc-doc fields
+      showLineDeliveryOrder: {
+        type: Boolean,
+        value: false
+      },
+      showLineGroupInfo: {
+        type: Boolean,
+        value: false
+      },
+      showLineProductionStatus: {
+        type: Boolean,
+        value: false
+      },
+      showLinePackMandatory: {
+        type: Boolean,
+        value: false
+      },
+      showPacksReduced: {
+        type: Boolean,
+        value: false
+      },
+      //other
       showDocHeader: {
         type: Boolean,
         value: false
@@ -558,18 +579,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         type: Boolean,
         value: false
       },
-      showLineDeliveryOrder: {
-        type: Boolean,
-        value: false
-      },
-      showLineGroupInfo: {
-        type: Boolean,
-        value: false
-      },
-      showLineProductionStatus: {
-        type: Boolean,
-        value: false
-      },
       showCanceledLines: {
         type: Boolean,
         value: false
@@ -583,10 +592,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         value: false
       },
       showAmountsIncludingTaxes: {
-        type: Boolean,
-        value: false
-      },
-      showLinePackMandatory: {
         type: Boolean,
         value: false
       },

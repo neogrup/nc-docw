@@ -162,6 +162,10 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           color: var(--error-color)
         }
 
+        .error{
+          color: var(--error-color)
+        }
+
         .line-content-pending-amount-payback{
           color: var(--success-color)
         }
@@ -293,15 +297,15 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                   <iron-icon icon="icons:query-builder"></iron-icon>
                   <div>
                     <div>
-                      {{localize('DOCW_SYSDATA_CREATED_TITLE')}} <b>[[_formatDate(data.data.sysData.created, language, "H:mm")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.createdByName]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.owner]]
+                      {{localize('DOCW_SYSDATA_CREATED_TITLE')}} <b>[[_formatDate(data.data.sysData.created, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.createdByName]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.owner]]
                     </div>
                     <div style="margin-top: 5px;">
-                      {{localize('DOCW_SYSDATA_EDITED_TITLE')}} <b>[[_formatDate(data.data.sysData.edited, language, "H:mm")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.editedByName]]
+                      {{localize('DOCW_SYSDATA_EDITED_TITLE')}} <b>[[_formatDate(data.data.sysData.edited, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.editedByName]]
                     </div>
 
                     <template is="dom-if" if="{{showPaymentDate}}">
                       <div style="margin-top: 5px;">
-                        {{localize('DOCW_SYSDATA_CLOSED_TITLE')}} <b>[[_formatDate(data.data.fiscal.closedTime, language, "H:mm")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.editedByName]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.fiscal.owner]]
+                        {{localize('DOCW_SYSDATA_CLOSED_TITLE')}} <b>[[_formatDate(data.data.fiscal.closedTime, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.editedByName]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.fiscal.owner]]
                       </div>
                     </template>
                   </div>
@@ -357,6 +361,48 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                   </div>
                 </div>
               </div>
+
+              <template is="dom-if" if="{{showMarketPlace}}">
+                <div class$="[[classNameInvoiceContainer]]">
+                  <div class="row-center">
+                    <div class="row-center" style="width: 50%">
+                      <iron-icon icon="icons:store"></iron-icon>
+                      <div>{{localize('DOCW_MKT_SOURCE_TITLE')}}<b>[[_showSource(sourceMarketPlace)]]</b></div>
+                    </div>
+                    <div class="row-center" >
+                      <iron-icon icon="icons:list"></iron-icon>
+                      <div>{{localize('DOCW_MKT_STATUS_TITLE')}}<b>[[_showStatus(statusMarketPlace)]]</b></div>
+                    </div>
+                  </div>
+                  <div class="row-center">
+                    <iron-icon icon="icons:home"></iron-icon>
+                    <div>{{localize('DOCW_MKT_TYPE_TITLE')}}<b>[[_showType(typeMarketPlace.value)]]</b></div>
+                  </div>
+                  <!--<div class="row-center">
+                    <iron-icon icon="nc-icons:hash"></iron-icon>
+                    <div>{{localize('DOCW_MKT_ORDER_TITLE')}}<b>[[orderMarketPlace]]</b></div>
+                  </div>-->
+                  <div class="row-center">
+                    <iron-icon icon="icons:query-builder"></iron-icon>
+                    <div>
+                      <div>{{localize('DOCW_MKT_SYNCED_STATUS_TITLE')}} <b>[[_formatDate(dateSynzed, language, "H:mm:ss")]]</b> </div>  
+                      <template is="dom-if" if="{{showDelivered}}">
+                        <div>{{localize('DOCW_MKT_DELIVERED_STATUS_TITLE')}} <b>[[_formatDate(dateDelivered, language, "H:mm:ss")]]</b> </div>  
+                      </template>
+                      <template is="dom-if" if="{{showCanceled}}">
+                        <div>{{localize('DOCW_MKT_CANCELLED_STATUS_TITLE')}} <b>[[_formatDate(dateCanceled, language, "H:mm:ss")]]</b> </div>  
+                      </template>
+                    </div>                    
+                  </div>
+                  <template is="dom-if" if="{{showError}}">
+                    <div class="row-center error">
+                      <iron-icon icon="icons:error"></iron-icon>
+                      <div>{{localize('DOCW_MKT_ERROR_STATUS_TITLE')}} <b>[[_formatDate(dateError, language, "H:mm")]] [[errorStatus.value]]</b> </div>  
+                    </div>
+                  </template>    
+                </div>
+              </template>
+
             </div>
 
             <template is="dom-if" if="{{showTicketInfoCustomer}}">
@@ -457,7 +503,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                   <vaadin-grid id="gridPayments" theme="compact" items="[[data.data.fiscal.paymentsSummary]]" height-by-rows>
                     <vaadin-grid-column flex-grow="1">
                         <template class="header">{{localize('DOCW_PAYMENTS_GRID_MEAN_NAME_TITLE')}}</template>
-                        <template>[[item.meanName]]</template>
+                        <template>[[_showMean(item)]]</template>
                     </vaadin-grid-column>
                     <vaadin-grid-column flex-grow="1" width="100px" hidden="{{!ticketPaymentShowTip}}">
                       <template class="header">
@@ -613,6 +659,10 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         type: Boolean,
         value: false
       },
+      showMarketPlace: {
+        type: Boolean,
+        value: false
+      },
       hidePacksMultiLevel: {
         type: Boolean,
         value: false
@@ -626,6 +676,51 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         type: String, 
         value: "ticket"
       },
+      sourceMarketPlace:{
+        type: String,
+      },
+      errorStatus: {
+        type: String,
+      },
+      showError: {
+        type: Boolean,
+      },
+      showCanceled: { 
+        type: Boolean,
+      },
+      showDelivered: { 
+        type: Boolean,
+      },
+      statusMarketPlace:{
+        type: String, 
+      },
+      typeMarketPlace:{
+        type: String, 
+      },
+      orderMarketPlace: {
+        type: String,
+      },
+      dateSynzed: {
+        type: String,
+      },
+      dateCanceled: {
+        type: String,
+      },
+      dateDelivered: {
+        type: String,
+      },
+      dateError: {
+        type: String,
+      },
+      dataMarketPlaceSourceList: {
+        type: Object, 
+      },
+      dataMarketPlaceSource: {
+        type: Object, 
+      },
+      dataMarketplaceTypeList: {
+        type: Object, 
+      },
     }
   }
 
@@ -636,6 +731,46 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     let path = import.meta.url.substr(0,import.meta.url.lastIndexOf('/'));
 
     this.loadResources(path+'/./static/translations.json');
+  }
+
+  _showStatus(status) {
+    let desc = status;
+    this.dataMarketplaceStatusList.data.forEach(item => {
+      if (item.id == status) {
+        desc = item.name;
+      }
+    });
+
+    return desc;
+  }
+
+  _showSource(source) {
+    let desc = source;
+    this.dataMarketPlaceSource.data.forEach(item => {
+      if (item.id == source) {
+        desc = item.name;
+      }
+    });
+
+    return desc;
+  }
+
+  _showType(type) {
+    let desc = type;
+    this.dataMarketplaceTypeList.data.forEach(item => {
+      if (item.id == type) {
+        desc = item.name;
+      }
+    });
+
+    return desc;
+  }
+
+  _showMean(mean) {
+    if (typeof mean.meanName == "undefined") {
+      return mean.mean;
+    }
+    return mean.meanName;
   }
 
   handleTrack(e){
@@ -785,6 +920,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     this.rescueNumber = "";
     this.rescueInvoice = "";
 
+    this.showMarketPlace = false;
 
     this.classNameInvoiceContainer = 'line-container-invoice';
     this.classNameInvoice = 'line-content-invoice';
@@ -916,6 +1052,82 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
         this.idorder = idorder.value;
         this.hideIdOrderIcon = false;
       }
+
+      if (typeof this.dataMarketplaceTypeList == "undefined") {
+        this.dataMarketplaceTypeList = {
+          data: [
+            {id: '1', name: this.localize('DOCW_MKT_TYPE_TOCOLLECT')},
+            {id: '2', name: this.localize('DOCW_MKT_TYPE_TOHOME')},
+            {id: '4', name: this.localize('DOCW_MKT_TYPE_TOTABLE')},
+          ]
+        };
+    
+        this.dataMarketplaceStatusList = {
+          data: [
+            {id: 'error', name: this.localize('DOCW_MKT_STATUS_LIST_ERROR')},
+            {id: 'opened', name: this.localize('DOCW_MKT_STATUS_LIST_OPENED')},
+            {id: 'synzed', name: this.localize('DOCW_MKT_STATUS_LIST_SYNZED')},
+            {id: 'closed', name: this.localize('DOCW_MKT_STATUS_LIST_CLOSED')},
+            {id: 'canceled', name: this.localize('DOCW_MKT_STATUS_LIST_CANCELLED')},
+            {id: 'produced', name: this.localize('DOCW_MKT_STATUS_LIST_PRODUCED')},
+            {id: 'synzedError', name: this.localize('DOCW_MKT_STATUS_LIST_SYNCEDERROR')},
+          ]
+        };
+    
+        this.dataMarketPlaceSource = {
+          data: [
+            {id: 'UBER', name: 'Uber'},
+            {id: 'GLOVO', name: 'Glovo'},
+            {id: 'JUSTEAT', name: 'JustEat'},
+            {id: 'HONEI', name: 'Honei'},
+            {id: 'CHEERFY', name: 'Cheerfy'},
+            {id: 'YUMMINN', name: 'Yumminn'},
+            {id: 'BC', name: 'My waiter'},
+            {id: 'APPLICATS', name: 'Applicats'},
+            {id: 'NETBERRY', name: 'NetBerry'},
+          ]
+        };
+      }
+
+      // marketplace 
+      this.sourceMarketPlace = "";
+      let sourceMkt = this.data.data.properties.find(property => property.name === "Origen");
+      if (typeof sourceMkt !== "undefined") {
+        this.showMarketPlace = true;  
+        this.sourceMarketPlace = sourceMkt.value;
+      }
+      
+      if (this.sourceMarketPlace == "") {
+        if ( this.data.data.subType == "BC") {
+          this.sourceMarketPlace = this.data.data.subType;
+          this.showMarketPlace = true; 
+        }
+      }
+      this.showCanceled = false;
+      this.showDelivered = false;
+      this.statusMarketPlace = "";
+      this.data.data.syncStatus.forEach(item => {
+        if (item.status == "synzed") {
+          this.dateSynzed = item.modified;
+        } else if (item.status == "canceled") {
+          this.dateCanceled = item.modified;
+          this.showCanceled = true;
+        } else if (item.status == "delivered") {
+          this.dateDelivered = item.modified;
+          this.showDelivered = true;
+        } else if (item.status == "produced") {
+          //this.dateDelivered = item.modified;
+          //this.showDelivered = true;
+        }
+        this.statusMarketPlace = item.status;
+      });
+
+      this.typeMarketPlace = this.data.data.properties.find(property => property.name === "TipoPedido");
+      this.orderMarketPlace = this.data.data.properties.find(property => property.name === "Pedido");
+      this.errorStatus = this.data.data.properties.find(property => property.name === "synzedError");
+      this.showError = !(typeof this.errorStatus === "undefined");
+      //let rescueDate = this.data.data.properties.find(property => property.name === "JornadaAbonado");
+
     }
 
     if ((this.data.data.buyerParty.loyalty.card) || (this.data.data.buyerParty.loyalty.account)) this.showCustomerLoyalty = true;

@@ -1,0 +1,117 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-12-28T09:12:12.102707164Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "BC",
+        "date": "20211214",
+        "shopCode": "NBDPRGDO0001",
+        "shopName": "RESTAURANTE MIKEL",
+        "status": "synzed",
+        "sysData": {
+            "created": "2021-12-14T08:41:59.432Z",
+            "createdBy": "BC",
+            "edited": "2021-12-14T15:26:29.831Z",
+            "editedBy": "system",
+            "editing": "2021-12-14T15:26:29.831Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "totals": {
+                "totalAmount": 2,
+                "pendingAmount": 2,
+                "subTotal": 2
+            },
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "01000006",
+                    "name": "Sprite",
+                    "price": 2
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 2,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "NBDPRGDO0001",
+                "status": "synzed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2021-12-14T15:26:29.36Z"
+            }
+        ],
+        "location": {
+            "zone": "Z0102",
+            "spot": "BARRA31"
+        },
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 1,
+            "soldProducts": 1,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Pedido",
+                "value": "5-20211214-1002"
+            },
+            {
+                "name": "IDOrder",
+                "value": "1002"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

@@ -1,0 +1,455 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-12-28T09:24:03.992026431Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "HONEI",
+        "date": "20231120",
+        "shopCode": "NGRPGGP50066",
+        "shopName": "IRUN",
+        "status": "produced",
+        "sysData": {
+            "created": "2023-11-20T15:13:13.582Z",
+            "createdBy": "HONEI",
+            "edited": "2023-11-20T15:19:43.487Z",
+            "editedBy": "system",
+            "editing": "2023-11-20T15:19:43.487Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "honei",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "taxes": [
+                {
+                    "id": "IVA",
+                    "rate": 10,
+                    "baseAmount": 41,
+                    "taxAmount": 4.1,
+                    "totalAmount": 45.1
+                }
+            ],
+            "totals": {
+                "grossAmount": 41,
+                "netAmount": 41,
+                "totalAmount": 45.1,
+                "deliveredAmount": 45.1,
+                "subTotal": 45.1
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 45.1,
+                    "mean": "honei",
+                    "dueDate": "0001-01-01T00:00:00Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "currency": "EUR",
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "idTip": -1,
+                    "mean": "honei",
+                    "meanName": "honei",
+                    "total": 45.1,
+                    "in": 45.1,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "type": "pack",
+                "product": {
+                    "id": "000349",
+                    "name": "Spaghetti",
+                    "price": 4.9,
+                    "basePrice": 4.454545454545455
+                },
+                "qty": 2,
+                "format": {
+                    "factor": 1,
+                    "qty": 2
+                },
+                "grossQty": 2,
+                "grossAmount": 8.91,
+                "netAmount": 8.9091,
+                "totalAmount": 9.8,
+                "packTotalAmount": 9.8,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 8.9091,
+                        "taxAmount": 0.8909,
+                        "totalAmount": 9.8
+                    }
+                ],
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 2,
+                "type": "packLine",
+                "product": {
+                    "id": "000355",
+                    "name": "Boloñesa",
+                    "price": 0
+                },
+                "qty": 2,
+                "format": {
+                    "factor": 1,
+                    "qty": 2
+                },
+                "grossQty": 2,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "refLine": 1,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 3,
+                "type": "pack",
+                "product": {
+                    "id": "000360",
+                    "name": "Lasaña Bolognesa",
+                    "price": 5.9,
+                    "basePrice": 5.363636363636363
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 5.36,
+                "netAmount": 5.3636,
+                "totalAmount": 5.9,
+                "packTotalAmount": 5.9,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 5.3636,
+                        "taxAmount": 0.5364,
+                        "totalAmount": 5.9
+                    }
+                ],
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 4,
+                "type": "pack",
+                "product": {
+                    "id": "000909",
+                    "name": "Pizza Barbacoa S/g",
+                    "price": 6.9,
+                    "basePrice": 6.2727272727272725
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 6.27,
+                "netAmount": 6.2727,
+                "totalAmount": 6.9,
+                "packTotalAmount": 6.9,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 6.2727,
+                        "taxAmount": 0.6273,
+                        "totalAmount": 6.9
+                    }
+                ],
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 5,
+                "type": "pack",
+                "product": {
+                    "id": "001183",
+                    "name": "Patatas Tutto Carne",
+                    "price": 4.8999999999999995,
+                    "basePrice": 4.454545454545455
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 13.36,
+                "netAmount": 13.3636,
+                "totalAmount": 14.7,
+                "packTotalAmount": 14.7,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 13.3636,
+                        "taxAmount": 1.3364,
+                        "totalAmount": 14.7
+                    }
+                ],
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 6,
+                "type": "pack",
+                "product": {
+                    "id": "000848",
+                    "name": "Combo Pops",
+                    "price": 3.9001,
+                    "basePrice": 3.5454545454545454
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 3.55,
+                "netAmount": 3.5455,
+                "totalAmount": 3.9,
+                "packTotalAmount": 3.9,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 3.5455,
+                        "taxAmount": 0.3545,
+                        "totalAmount": 3.9
+                    }
+                ],
+                "comments": {
+                    "private": "sin pollo"
+                },
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 7,
+                "type": "pack",
+                "product": {
+                    "id": "000363",
+                    "name": "Sweet Party",
+                    "price": 3.9001,
+                    "basePrice": 3.5454545454545454
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 3.55,
+                "netAmount": 3.5455,
+                "totalAmount": 3.9,
+                "packTotalAmount": 3.9,
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "rate": 10,
+                        "baseAmount": 3.5455,
+                        "taxAmount": 0.3545,
+                        "totalAmount": 3.9
+                    }
+                ],
+                "comments": {
+                    "private": "sin chocolate"
+                },
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "NGRPGGP50066",
+                "status": "synzed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2023-11-20T15:13:14.314Z"
+            },
+            {
+                "shopGroupCode": "NGRPGGP50066",
+                "status": "produced",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2023-11-20T15:19:43.237Z"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 11,
+            "soldProducts": 9,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Pedido",
+                "value": "655b7691840fca28cd792eb7"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "1"
+            },
+            {
+                "name": "CentroExterno",
+                "value": "c3RhZ2luZytuZW9ncnVwQGhvbmVp"
+            },
+            {
+                "name": "IDOrder",
+                "value": "Ep7xygaMk5896"
+            },
+            {
+                "name": "StoreID",
+                "value": "c3RhZ2luZytuZW9ncnVwQGhvbmVp"
+            },
+            {
+                "name": "Origen",
+                "value": "HONEI"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

@@ -1,0 +1,172 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-12-28T09:36:42.973014043Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "BC",
+        "date": "20210215",
+        "shopCode": "NGRPGGP40005",
+        "shopName": "TB SANT PAU",
+        "status": "error",
+        "sysData": {
+            "created": "2021-02-15T12:04:33.49Z",
+            "createdBy": "bc",
+            "edited": "2021-02-15T12:04:38.032Z",
+            "editedBy": "system",
+            "editing": "2021-02-15T12:04:38.032Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "Glòria Guimerà",
+            "loyalty": {},
+            "taxIdentification": {
+                "type": "NIF"
+            },
+            "contact": {
+                "email": "gloria.guimera@neogrup.com",
+                "tel": "666666666"
+            }
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "totals": {
+                "totalAmount": 1.6,
+                "deliveredAmount": 7.1,
+                "pendingAmount": -5.5,
+                "subTotal": 1.6
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 7.1,
+                    "mean": "ONL",
+                    "dueDate": "0001-01-01T00:00:00Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "currency": "EUR",
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "mean": "ONL",
+                    "total": 7.1,
+                    "in": 7.1,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "00000001",
+                    "name": "Agua",
+                    "price": 1.6
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 1.6,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "NGRPGGP40005",
+                "status": "synzedError",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2021-02-15T12:04:37.536Z"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 1,
+            "soldProducts": 1,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Pedido",
+                "value": "1153-20210215-1003"
+            },
+            {
+                "name": "IDOrder",
+                "value": "1153-20210215-1003"
+            },
+            {
+                "name": "HEntrega",
+                "value": "1334"
+            },
+            {
+                "name": "GastosEnvio",
+                "value": "5.5"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "2"
+            },
+            {
+                "name": "synzedError",
+                "value": "code: 20105, message: La forma de pago ONL no está dada de alta"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

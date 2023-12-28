@@ -297,7 +297,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                   <iron-icon icon="icons:query-builder"></iron-icon>
                   <div>
                     <div>
-                      {{localize('DOCW_SYSDATA_CREATED_TITLE')}} <b>[[_formatDate(data.data.sysData.created, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.createdByName]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.owner]]
+                      {{localize('DOCW_SYSDATA_CREATED_TITLE')}} <b>[[_formatDate(data.data.sysData.created, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[_showCreatedBy(data.data.sysData)]] {{localize('DOCW_SYSDATA_OWNER_TITLE')}} [[data.data.owner]]
                     </div>
                     <div style="margin-top: 5px;">
                       {{localize('DOCW_SYSDATA_EDITED_TITLE')}} <b>[[_formatDate(data.data.sysData.edited, language, "H:mm:ss")]]</b> {{localize('DOCW_SYSDATA_BY_NAME_TITLE')}} [[data.data.sysData.editedByName]]
@@ -764,6 +764,13 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     });
 
     return desc;
+  }
+
+  _showCreatedBy(sysdata) {
+    if (typeof sysdata.createdByName == "undefined") {
+      return sysdata.createdBy;
+    }
+    return sysdata.createdByName;
   }
 
   _showMean(mean) {

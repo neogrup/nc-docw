@@ -1,0 +1,199 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2023-12-28T16:30:04.548239628Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "GLOVO",
+        "date": "20231227",
+        "shopCode": "PMDR01180118",
+        "shopName": "Pomodoro HOLEA",
+        "status": "opened",
+        "sysData": {
+            "created": "2023-12-27T21:28:35Z",
+            "createdBy": "glovo",
+            "edited": "2023-12-27T21:28:35Z",
+            "editedBy": "glovo",
+            "editing": "2023-12-27T21:28:35Z",
+            "editingBy": "glovo",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "Alma D.",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "totals": {
+                "totalAmount": 11.8,
+                "deliveredAmount": 11.8,
+                "subTotal": 11.8
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 11.8,
+                    "mean": "DELAYED",
+                    "dueDate": "2023-12-27T21:28:35Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "mean": "DELAYED",
+                    "total": 11.8,
+                    "in": 11.8,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "001182",
+                    "name": "Patatas, Cheese Bacon Al Forno",
+                    "price": 5.9,
+                    "basePrice": 5.9
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 5.9,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 2,
+                "product": {
+                    "id": "000360",
+                    "name": "Lasaña Bolognesa",
+                    "price": 5.9,
+                    "basePrice": 5.9
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 5.9,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 2,
+            "soldProducts": 2,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Origen",
+                "value": "GLOVO"
+            },
+            {
+                "name": "Pedido",
+                "value": "100313474474"
+            },
+            {
+                "name": "StoreID",
+                "value": "PMDR01180118"
+            },
+            {
+                "name": "IDOrder",
+                "value": "470"
+            },
+            {
+                "name": "MktpOrder",
+                "value": "HUGLVB9CR"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "2"
+            },
+            {
+                "name": "HEntrega",
+                "value": "2241"
+            },
+            {
+                "name": "TelefonoCliente",
+                "value": "N/A"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

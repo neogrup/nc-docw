@@ -767,6 +767,9 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
   }
 
   _showCreatedBy(sysdata) {
+    if (typeof sysdata == "undefined") {
+      return "";
+    }
     if (typeof sysdata.createdByName == "undefined") {
       return sysdata.createdBy;
     }
@@ -1097,38 +1100,43 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       }
 
       // marketplace 
-      this.sourceMarketPlace = "";
+      this.sourceMarketPlace = "---";
       let sourceMkt = this.data.data.properties.find(property => property.name === "Origen");
       if (typeof sourceMkt !== "undefined") {
         this.showMarketPlace = true;  
         this.sourceMarketPlace = sourceMkt.value;
       }
       
-      if (this.sourceMarketPlace == "") {
-        if ( this.data.data.subType == "BC") {
+      if (this.sourceMarketPlace == "") { // this code will be elimnated in the future
+        if ( this.data.data.subType == "NETBERRY") {
+          this.sourceMarketPlace = this.data.data.subType;
+          this.showMarketPlace = true; 
+        } else if ( this.data.data.subType == "HONEI") {
           this.sourceMarketPlace = this.data.data.subType;
           this.showMarketPlace = true; 
         }
       }
       this.showCanceled = false;
       this.showDelivered = false;
-      this.statusMarketPlace = "";
-      this.data.data.syncStatus.forEach(item => {
-        if (item.status == "synzed") {
-          this.dateSynzed = item.modified;
-        } else if (item.status == "canceled") {
-          this.dateCanceled = item.modified;
-          this.showCanceled = true;
-        } else if (item.status == "delivered") {
-          this.dateDelivered = item.modified;
-          this.showDelivered = true;
-        } else if (item.status == "produced") {
-          //this.dateDelivered = item.modified;
-          //this.showDelivered = true;
-        }
-        this.statusMarketPlace = item.status;
-      });
-
+      this.statusMarketPlace = "opened";
+      if (!typeof this.data.data.syncStatus == "undefined") {
+        this.data.data.syncStatus.forEach(item => {
+          if (item.status == "synzed") {
+            this.dateSynzed = item.modified;
+          } else if (item.status == "canceled") {
+            this.dateCanceled = item.modified;
+            this.showCanceled = true;
+          } else if (item.status == "delivered") {
+            this.dateDelivered = item.modified;
+            this.showDelivered = true;
+          } else if (item.status == "produced") {
+            //this.dateDelivered = item.modified;
+            //this.showDelivered = true;
+          }
+          this.statusMarketPlace = item.status;
+        });  
+      }
+      
       this.typeMarketPlace = this.data.data.properties.find(property => property.name === "TipoPedido");
       this.orderMarketPlace = this.data.data.properties.find(property => property.name === "Pedido");
       this.errorStatus = this.data.data.properties.find(property => property.name === "synzedError");

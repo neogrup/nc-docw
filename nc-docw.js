@@ -23,7 +23,6 @@ import { mixinBehaviors } from '@polymer/polymer/lib/legacy/class.js';
 import { MixinDoc } from './nc-docw-behavior.js';
 import '@neogrup/nc-doc/nc-doc.js';
 import moment from 'moment/src/moment.js';
-import { relativeTimeThreshold } from 'moment';
 
 class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerElement)) {
   static get template() {

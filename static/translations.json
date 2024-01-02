@@ -60,6 +60,7 @@
     "DOCW_MKT_STATUS_LIST_CANCELLED": "Canceled",
     "DOCW_MKT_STATUS_LIST_PRODUCED": "Produced",
     "DOCW_MKT_STATUS_LIST_SYNCEDERROR": "Error sincronyzing",
+    "DOCW_MKT_STATUS_LIST_CANCELEDBYEATER": "Customer canceled",
 
     "canceled": "Canceled",
     "closed": "Closed",
@@ -130,6 +131,7 @@
     "DOCW_MKT_STATUS_LIST_CANCELLED": "Cancelado",
     "DOCW_MKT_STATUS_LIST_PRODUCED": "Producido",
     "DOCW_MKT_STATUS_LIST_SYNCEDERROR": "Error sincronización",
+    "DOCW_MKT_STATUS_LIST_CANCELEDBYEATER": "Cancelado cliente",
 
     "DOCW_PAYMENTS_GRID_TIP_AMOUNT_TITLE":"Propina",
     "canceled": "Anulado",
@@ -202,6 +204,7 @@
     "DOCW_MKT_STATUS_LIST_CANCELLED": "Cancel·lat",
     "DOCW_MKT_STATUS_LIST_PRODUCED": "Produït",
     "DOCW_MKT_STATUS_LIST_SYNCEDERROR": "Error sincronització",
+    "DOCW_MKT_STATUS_LIST_CANCELEDBYEATER": "Cancel·lat client",
 
     "canceled": "Anul·lat",
     "closed": "Tancat",
@@ -273,6 +276,7 @@
     "DOCW_MKT_STATUS_LIST_CANCELLED": "Canceled",
     "DOCW_MKT_STATUS_LIST_PRODUCED": "Produced",
     "DOCW_MKT_STATUS_LIST_SYNCEDERROR": "Error sincronyzing",
+    "DOCW_MKT_STATUS_LIST_CANCELEDBYEATER": "Customer canceled",
     
     "canceled": "Annulé",
     "closed": "Fermé",

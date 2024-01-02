@@ -1119,7 +1119,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       this.showCanceled = false;
       this.showDelivered = false;
       this.statusMarketPlace = "opened";
-      if (!typeof this.data.data.syncStatus == "undefined") {
+      if (!(typeof this.data.data.syncStatus == "undefined")) {
         this.data.data.syncStatus.forEach(item => {
           if (item.status == "synzed") {
             this.dateSynzed = item.modified;

@@ -1,0 +1,324 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2024-01-02T15:35:07.992021634Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "GLOVO",
+        "date": "20240101",
+        "shopCode": "PMDR00380038",
+        "shopName": "Pomodoro TORRECÁRDENAS",
+        "status": "closed",
+        "sysData": {
+            "created": "2024-01-01T21:17:29Z",
+            "createdBy": "glovo",
+            "edited": "2024-01-01T22:03:24.823Z",
+            "editedBy": "system",
+            "editing": "2024-01-01T22:03:24.823Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "Maria D.",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "totals": {
+                "totalAmount": 17.7,
+                "deliveredAmount": 17.7,
+                "subTotal": 17.7
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 17.7,
+                    "mean": "DELAYED",
+                    "dueDate": "2024-01-01T21:17:29Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "mean": "DELAYED",
+                    "total": 17.7,
+                    "in": 17.7,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "000361",
+                    "name": "Lasaña Pollo Formaggi",
+                    "price": 5.9,
+                    "basePrice": 5.9
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 5.9,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 2,
+                "type": "pack",
+                "product": {
+                    "id": "001430",
+                    "name": "Pasta Fresca",
+                    "price": 4.9,
+                    "basePrice": 4.9
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 4.9,
+                "packTotalAmount": 4.9,
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 3,
+                "type": "packLine",
+                "product": {
+                    "id": "000351",
+                    "name": "Tagliatelle",
+                    "price": 0
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001430-000351",
+                "refLine": 2,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 4,
+                "type": "packLine",
+                "product": {
+                    "id": "000355",
+                    "name": "Boloñesa",
+                    "price": 0
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001430-000355",
+                "refLine": 2,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 5,
+                "product": {
+                    "id": "001653",
+                    "name": "Pizza Pulled Pork",
+                    "price": 6.9,
+                    "basePrice": 6.9
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 6.9,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "PMDR00380038",
+                "status": "synzed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-01T21:21:07.561Z"
+            },
+            {
+                "shopGroupCode": "PMDR00380038",
+                "status": "closed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-01T22:03:24.822Z"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 3,
+            "soldProducts": 3,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Origen",
+                "value": "GLOVO"
+            },
+            {
+                "name": "Pedido",
+                "value": "100323106383"
+            },
+            {
+                "name": "StoreID",
+                "value": "PMDR00380038"
+            },
+            {
+                "name": "IDOrder",
+                "value": "731"
+            },
+            {
+                "name": "MktpOrder",
+                "value": "ALRLZQC1W"
+            },
+            {
+                "name": "Courier",
+                "value": "Fredys A."
+            },
+            {
+                "name": "CourierPhone",
+                "value": "+34642016638"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "2"
+            },
+            {
+                "name": "HEntrega",
+                "value": "2233"
+            },
+            {
+                "name": "TelefonoCliente",
+                "value": "N/A"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

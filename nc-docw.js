@@ -392,6 +392,12 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                       <template is="dom-if" if="{{showCanceled}}">
                         <div>{{localize('DOCW_MKT_CANCELLED_STATUS_TITLE')}} <b>[[_formatDate(dateCanceled, language, "H:mm:ss")]]</b> </div>  
                       </template>
+                      <template is="dom-if" if="{{showClosed}}">
+                        <div>{{localize('DOCW_MKT_CLOSED_STATUS_TITLE')}} <b>[[_formatDate(dateClosed, language, "H:mm:ss")]]</b> </div>  
+                      </template>
+                      <template is="dom-if" if="{{showProduced}}">
+                        <div>{{localize('DOCW_MKT_PODUCED_STATUS_TITLE')}} <b>[[_formatDate(dateProduced, language, "H:mm:ss")]]</b> </div>  
+                      </template>
                     </div>                    
                   </div>
                   <template is="dom-if" if="{{showError}}">
@@ -691,6 +697,12 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       showDelivered: { 
         type: Boolean,
       },
+      showProduced: {
+        type: Boolean,
+      },
+      showClosed: {
+        type: Boolean,
+      },
       statusMarketPlace:{
         type: String, 
       },
@@ -709,6 +721,12 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       dateDelivered: {
         type: String,
       },
+      dateClosed: {
+        type: String,
+      },
+      dateProduced: {
+        type: String,
+      },
       dateError: {
         type: String,
       },
@@ -721,6 +739,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       dataMarketplaceTypeList: {
         type: Object, 
       },
+      
     }
   }
 
@@ -1133,6 +1152,12 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           } else if (item.status == "delivered") {
             this.dateDelivered = item.modified;
             this.showDelivered = true;
+          } else if (item.status == "closed") {
+            this.dateClosed = item.modified;
+            this.showClosed = true;
+          } else if (item.status == "produced") {
+            this.dateProduced = item.modified;
+            this.showProduced = true;
           } else if (item.status == "produced") {
             //this.dateDelivered = item.modified;
             //this.showDelivered = true;

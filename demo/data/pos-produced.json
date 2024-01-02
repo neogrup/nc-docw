@@ -1,0 +1,226 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2024-01-02T15:45:40.563867573Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "GLOVO",
+        "date": "20240101",
+        "shopCode": "DONG00130013",
+        "shopName": "Don G - EL BOULEVARD",
+        "status": "produced",
+        "sysData": {
+            "created": "2024-01-01T20:52:37Z",
+            "createdBy": "glovo",
+            "edited": "2024-01-01T21:11:50.745Z",
+            "editedBy": "system",
+            "editing": "2024-01-01T21:11:50.745Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "Ivan S.",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "totals": {
+                "totalAmount": 14.95,
+                "deliveredAmount": 14.95,
+                "subTotal": 14.95
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 14.95,
+                    "mean": "CASH",
+                    "dueDate": "2024-01-01T20:52:37Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "mean": "CASH",
+                    "total": 14.95,
+                    "in": 14.95,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "type": "pack",
+                "product": {
+                    "id": "DG000517",
+                    "name": "PHILADELPHIA STK (XG)",
+                    "price": 14.95,
+                    "basePrice": 14.95
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 14.95,
+                "packTotalAmount": 14.95,
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 2,
+                "type": "packLine",
+                "product": {
+                    "id": "DG000304",
+                    "name": "PATATAS FRITAS NORMALES",
+                    "price": 0
+                },
+                "qty": 1,
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "DG000517-DG000304",
+                "refLine": 1,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "DONG00130013",
+                "status": "synzed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-01T21:00:08.22Z"
+            },
+            {
+                "shopGroupCode": "DONG00130013",
+                "status": "produced",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-01T21:11:50.745Z"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 1,
+            "soldProducts": 1,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Origen",
+                "value": "GLOVO"
+            },
+            {
+                "name": "Pedido",
+                "value": "100323045108"
+            },
+            {
+                "name": "StoreID",
+                "value": "DONG00130013"
+            },
+            {
+                "name": "IDOrder",
+                "value": "137"
+            },
+            {
+                "name": "MktpOrder",
+                "value": "V4U9B2CP"
+            },
+            {
+                "name": "Courier",
+                "value": "Mahmoud H."
+            },
+            {
+                "name": "CourierPhone",
+                "value": "+34664875422"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "2"
+            },
+            {
+                "name": "HEntrega",
+                "value": "2212"
+            },
+            {
+                "name": "TelefonoCliente",
+                "value": "N/A"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

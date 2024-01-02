@@ -48,6 +48,8 @@
     "DOCW_MKT_DELIVERED_STATUS_TITLE": "Delivered: ",
     "DOCW_MKT_CANCELLED_STATUS_TITLE": "Canceled: ",
     "DOCW_MKT_ERROR_STATUS_TITLE": "Error: ",
+    "DOCW_MKT_PODUCED_STATUS_TITLE": "Produced: ",
+    "DOCW_MKT_CLOSED_STATUS_TITLE": "Closed: ",
 
     "DOCW_MKT_TYPE_TOTABLE": "To table",
     "DOCW_MKT_TYPE_TOHOME": "To home",
@@ -119,6 +121,8 @@
     "DOCW_MKT_DELIVERED_STATUS_TITLE": "Entregado: ",
     "DOCW_MKT_CANCELLED_STATUS_TITLE": "Cancelado: ",
     "DOCW_MKT_ERROR_STATUS_TITLE": "Error: ",
+    "DOCW_MKT_PODUCED_STATUS_TITLE": "Producido: ",
+    "DOCW_MKT_CLOSED_STATUS_TITLE": "Cerrado: ",
 
     "DOCW_MKT_TYPE_TOTABLE": "A mesa",
     "DOCW_MKT_TYPE_TOHOME": "A domcilio",
@@ -192,6 +196,8 @@
     "DOCW_MKT_DELIVERED_STATUS_TITLE": "Entregat: ",
     "DOCW_MKT_CANCELLED_STATUS_TITLE": "Cancel·lat: ",
     "DOCW_MKT_ERROR_STATUS_TITLE": "Error: ",
+    "DOCW_MKT_PODUCED_STATUS_TITLE": "Produit: ",
+    "DOCW_MKT_CLOSED_STATUS_TITLE": "Tancat: ",
 
     "DOCW_MKT_TYPE_TOTABLE": "A taula",
     "DOCW_MKT_TYPE_TOHOME": "A casa",
@@ -263,6 +269,8 @@
     "DOCW_MKT_SYNCED_STATUS_TITLE": "Sincronyzed: ",
     "DOCW_MKT_DELIVERED_STATUS_TITLE": "Delivered: ",
     "DOCW_MKT_CANCELLED_STATUS_TITLE": "Canceled: ",
+    "DOCW_MKT_PODUCED_STATUS_TITLE": "Produced: ",
+    "DOCW_MKT_CLOSED_STATUS_TITLE": "Closed: ",
     "DOCW_MKT_ERROR_STATUS_TITLE": "Error: ",
 
     "DOCW_MKT_TYPE_TOTABLE": "To table",

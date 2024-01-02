@@ -1081,6 +1081,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
             {id: 'canceled', name: this.localize('DOCW_MKT_STATUS_LIST_CANCELLED')},
             {id: 'produced', name: this.localize('DOCW_MKT_STATUS_LIST_PRODUCED')},
             {id: 'synzedError', name: this.localize('DOCW_MKT_STATUS_LIST_SYNCEDERROR')},
+            {id: 'canceledByEater', name: this.localize('DOCW_MKT_STATUS_LIST_CANCELEDBYEATER')},
           ]
         };
     

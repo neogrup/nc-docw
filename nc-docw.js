@@ -1127,6 +1127,9 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
           } else if (item.status == "canceled") {
             this.dateCanceled = item.modified;
             this.showCanceled = true;
+          } else if (item.status == "canceledByEater") {
+            this.dateCanceled = item.modified;
+            this.showCanceled = true;
           } else if (item.status == "delivered") {
             this.dateDelivered = item.modified;
             this.showDelivered = true;

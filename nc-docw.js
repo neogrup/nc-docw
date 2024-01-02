@@ -23,6 +23,7 @@ import { mixinBehaviors } from '@polymer/polymer/lib/legacy/class.js';
 import { MixinDoc } from './nc-docw-behavior.js';
 import '@neogrup/nc-doc/nc-doc.js';
 import moment from 'moment/src/moment.js';
+import { relativeTimeThreshold } from 'moment';
 
 class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerElement)) {
   static get template() {
@@ -1138,6 +1139,8 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       }
       this.showCanceled = false;
       this.showDelivered = false;
+      this.showClosed = false;
+      this.showProduced = false;
       this.statusMarketPlace = "opened";
       if (!(typeof this.data.data.syncStatus == "undefined")) {
         this.data.data.syncStatus.forEach(item => {

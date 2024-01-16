@@ -1,0 +1,487 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2024-01-04T15:20:05.962947659Z",
+    "data": {
+        "version": "0.2",
+        "type": "ticket",
+        "subType": "GLOVO",
+        "date": "20240103",
+        "shopCode": "PMDR00560056",
+        "shopName": "Pomodoro CÁDIZ CENTRO",
+        "status": "closed",
+        "sysData": {
+            "created": "2024-01-03T12:36:39Z",
+            "createdBy": "glovo",
+            "edited": "2024-01-03T19:22:17.201Z",
+            "editedBy": "system",
+            "editing": "2024-01-03T19:22:17.201Z",
+            "editingBy": "system",
+            "sent": "0001-01-01T00:00:00Z"
+        },
+        "buyerParty": {
+            "name": "Manuel G.",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "totals": {
+                "totalAmount": 137.4,
+                "deliveredAmount": 137.4,
+                "subTotal": 137.4
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 137.4,
+                    "mean": "DELAYED",
+                    "dueDate": "2024-01-03T12:36:39Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "mean": "DELAYED",
+                    "total": 137.4,
+                    "in": 137.4,
+                    "config": {
+                        "code": "",
+                        "name": "",
+                        "behavior": {}
+                    }
+                }
+            ],
+            "closedTime": "0001-01-01T00:00:00Z",
+            "deliveredTime": "0001-01-01T00:00:00Z",
+            "serviceDate": "0001-01-01T00:00:00Z"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "001182",
+                    "name": "Patatas, Cheese Bacon Al Forno",
+                    "price": 5.8999999999999995,
+                    "basePrice": 5.9
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 17.7,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 2,
+                "product": {
+                    "id": "001642",
+                    "name": "Patatas Pulled pork",
+                    "price": 6.8999999999999995,
+                    "basePrice": 6.9
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 20.7,
+                "comments": {},
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 3,
+                "type": "pack",
+                "product": {
+                    "id": "001468",
+                    "name": "Promo 3 Pizzas",
+                    "price": 15,
+                    "basePrice": 15
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 45,
+                "packTotalAmount": 45,
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 4,
+                "type": "packLine",
+                "product": {
+                    "id": "000340",
+                    "name": "Pizza Barbacoa",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001468-000340",
+                "refLine": 3,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 5,
+                "type": "packLine",
+                "product": {
+                    "id": "000342",
+                    "name": "Pizza Prosciutto",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001468-000342",
+                "refLine": 3,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 6,
+                "type": "packLine",
+                "product": {
+                    "id": "000344",
+                    "name": "Pizza 5 Quesos",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001468-000344",
+                "refLine": 3,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 7,
+                "type": "pack",
+                "product": {
+                    "id": "001613",
+                    "name": "Promo 3 Pizzas Gourmet",
+                    "price": 18,
+                    "basePrice": 18
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 54,
+                "packTotalAmount": 54,
+                "comments": {},
+                "packCompleted": "S",
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S"
+            },
+            {
+                "id": 8,
+                "type": "packLine",
+                "product": {
+                    "id": "001486",
+                    "name": "Pizza Barbacoa Cremosa de Pollo",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001613-001486",
+                "refLine": 7,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 9,
+                "type": "packLine",
+                "product": {
+                    "id": "001488",
+                    "name": "Pizza Carbonara Deluxe",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001613-001488",
+                "refLine": 7,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            },
+            {
+                "id": 10,
+                "type": "packLine",
+                "product": {
+                    "id": "001486",
+                    "name": "Pizza Barbacoa Cremosa de Pollo",
+                    "price": 0
+                },
+                "qty": 3,
+                "format": {
+                    "factor": 1,
+                    "qty": 3
+                },
+                "grossQty": 3,
+                "grossAmount": 0,
+                "netAmount": 0,
+                "totalAmount": 0,
+                "comments": {},
+                "serialNumber": "001613-001486",
+                "refLine": 7,
+                "startTime": "0001-01-01T00:00:00Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "0001-01-01T00:00:00Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "N"
+            }
+        ],
+        "syncStatus": [
+            {
+                "shopGroupCode": "PMDR00560056",
+                "status": "synzed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-03T12:36:44.267Z"
+            },
+            {
+                "shopGroupCode": "PMDR00560056",
+                "status": "closed",
+                "apiKey": "65f0230c-cdef-441e-8b02-65589ecd103f",
+                "modified": "2024-01-03T19:22:17.2Z"
+            }
+        ],
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 12,
+            "soldProducts": 12,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "Origen",
+                "value": "GLOVO"
+            },
+            {
+                "name": "Pedido",
+                "value": "100325796987"
+            },
+            {
+                "name": "StoreID",
+                "value": "PMDR00560056"
+            },
+            {
+                "name": "IDOrder",
+                "value": "520"
+            },
+            {
+                "name": "MktpOrder",
+                "value": "CWHQ1Y5M"
+            },
+            {
+                "name": "TipoPedido",
+                "value": "2"
+            },
+            {
+                "name": "HEntrega",
+                "value": "1351"
+            },
+            {
+                "name": "TelefonoCliente",
+                "value": "N/A"
+            }
+        ],
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

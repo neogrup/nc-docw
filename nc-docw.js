@@ -1174,15 +1174,14 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       this.showError = !(typeof this.errorStatus === "undefined");
       //let rescueDate = this.data.data.properties.find(property => property.name === "JornadaAbonado");
 
+      this.room = this.data.data.properties.find(property => property.name === "Habitacion");
+      if (!this.room) {
+        this.room = {value:""};
+      }
     }
 
     if ((this.data.data.buyerParty.loyalty.card) || (this.data.data.buyerParty.loyalty.account)) this.showCustomerLoyalty = true;
     if (this.data.data.buyerParty.totalClients) this.totalClients = this.data.data.buyerParty.totalClients;
-    
-    this.room = this.data.data.properties.find(property => property.name === "Habitacion");
-    if (!this.room) {
-      this.room = {value:""};
-    }
 
     // Payments
     if (this.data.data.fiscal.totals.pendingAmount) { 

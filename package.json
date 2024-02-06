@@ -10,7 +10,7 @@
     "url": "git+https://github.com/neogrup/nc-docw.git"
   },
   "name": "@neogrup/nc-docw",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",

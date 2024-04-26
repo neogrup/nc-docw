@@ -67,8 +67,8 @@
     "canceled": "Canceled",
     "closed": "Closed",
     "closedNotDelivered": "Not delivered",
-    "modified": "Change",
-    "modifying": "Change",
+    "modified": "Modified",
+    "modifying": "Modifying",
     "credited": "Credited",
     "creditNote": "Credit note",
     "opened": "Opened"
@@ -141,8 +141,8 @@
     "canceled": "Anulado",
     "closed": "Cerrado",
     "closedNotDelivered": "No entregado",
-    "modified": "Cambio",
-    "modifying": "Cambio",
+    "modified": "Modificado",
+    "modifying": "Modificando",
     "credited": "Devolución",
     "creditNote": "Abono",
     "opened": "Abierto"
@@ -215,8 +215,8 @@
     "canceled": "Anul·lat",
     "closed": "Tancat",
     "closedNotDelivered": "No lliurat",
-    "modified": "Canvi",
-    "modifying": "Canvi",
+    "modified": "Modificat",
+    "modifying": "Modificant",
     "credited": "Devolució",
     "creditNote": "Abonament",
     "opened": "Obert"
@@ -289,8 +289,8 @@
     "canceled": "Annulé",
     "closed": "Fermé",
     "closedNotDelivered": "No livré",
-    "modified": "Changement",
-    "modifying": "Changement",
+    "modified": "Modifié",
+    "modifying": "Modification",
     "credited": "Remboursement",
     "creditNote": "Abonné",
     "opened": "Ouvert"

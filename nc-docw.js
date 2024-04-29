@@ -1047,10 +1047,12 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
       let proformaTime = this.data.data.properties.find(property => property.name === "ProformaImpresion");
       let proformaLastTime = this.data.data.properties.find(property => property.name === "ProformaImpresionLast");
       if (this.data.data.stats.printProformaCount !== 0){
-        if (proformaLastTime) {
-          this.proformaPrintedTimes = "(" + this._formatTime(proformaTime.value) + " - " + this._formatTime(proformaLastTime.value) + ")";
-        } else {
-          this.proformaPrintedTimes = "(" + this._formatTime(proformaTime.value) + ")";
+        if (proformaTime) {
+          if (proformaLastTime) {
+            this.proformaPrintedTimes = "(" + this._formatTime(proformaTime.value) + " - " + this._formatTime(proformaLastTime.value) + ")";
+          } else {
+            this.proformaPrintedTimes = "(" + this._formatTime(proformaTime.value) + ")";
+          }
         }
       }
 

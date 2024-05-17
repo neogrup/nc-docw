@@ -310,7 +310,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                 <div class$="[[classNameInvoiceContainer]]">
                   <div><b>{{localize('DOCW_FISCAL_TITLE')}}</b></div>
                   <div class="row-center">
-                    <div class="row-center" style="width: 60%">
+                    <div class="row-center" style="width: 20%">
                       <iron-icon icon="device:sd-storage"></iron-icon>
                       <div>[[data.data.fiscal.fiscalType]]</div>
                     </div>

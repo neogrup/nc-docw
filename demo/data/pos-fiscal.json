@@ -1,0 +1,231 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2024-05-17T13:12:42.4551508+02:00",
+    "data": {
+        "version": "0.3",
+        "type": "ticket",
+        "subType": "CON",
+        "subTypeExplain": "Venta",
+        "order": "600010",
+        "date": "20240517",
+        "shopCode": "R002",
+        "shopName": "Restaurante ' Granada",
+        "status": "closed",
+        "statusExplain": "closed",
+        "sysData": {
+            "created": "2024-05-17T13:12:31Z",
+            "createdBy": "78968761D",
+            "createdByName": "Alejando Cintas Sánchez",
+            "edited": "2024-05-17T13:12:37.19Z",
+            "editedBy": "78968761D",
+            "editedByName": "Alejando Cintas Sánchez",
+            "editing": "0001-01-01T00:00:00Z",
+            "sent": "2024-05-17T13:12:37Z"
+        },
+        "buyerParty": {
+            "code": "00000",
+            "name": "Contado",
+            "postalAddress": {
+                "detail": "",
+                "city": "",
+                "postalCode": "",
+                "state": "",
+                "country": "",
+                "countryiso30661": ""
+            },
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {},
+            "totalClients": 2
+        },
+        "fiscal": {
+            "documentSerie": "FS 240099Z01",
+            "documentNumber": "0000208",
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "taxes": [
+                {
+                    "id": "IVA",
+                    "ruleId": "IVA10",
+                    "rate": 10,
+                    "baseAmount": 1.82,
+                    "taxAmount": 0.18,
+                    "totalAmount": 2
+                }
+            ],
+            "totals": {
+                "grossAmount": 1.82,
+                "netAmount": 1.82,
+                "totalAmount": 2,
+                "deliveredAmount": 2,
+                "subTotal": 2
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 2,
+                    "mean": "MET",
+                    "dueDate": "0001-01-01T00:00:00Z",
+                    "sysData": {
+                        "created": "0001-01-01T00:00:00Z",
+                        "edited": "0001-01-01T00:00:00Z",
+                        "editing": "0001-01-01T00:00:00Z",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "currency": "EUR",
+                    "currencySymbol": "€",
+                    "drawer": "R00401",
+                    "amountCurrency": 2,
+                    "affectPrice": "S",
+                    "Status": "closed"
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "idTip": -1,
+                    "mean": "MET",
+                    "meanName": "Metálico",
+                    "total": 2,
+                    "in": 2,
+                    "status": "closed",
+                    "config": {
+                        "code": "MET",
+                        "name": "Metálico",
+                        "urlImage": "imgpay/R002/Z01/PagosCobros/Metalico.png",
+                        "urlImageWorking": "imgpay/R002/Z01/PagosCobros/Metalico.gif",
+                        "behavior": {
+                            "askAmount": "S"
+                        }
+                    },
+                    "currency": "EUR",
+                    "currencySymbol": "€"
+                }
+            ],
+            "owner": "Z01",
+            "drawer": "R00401",
+            "drawerName": "Cajón 01",
+            "closedTime": "2024-05-17T13:12:36Z",
+            "delivered": "S",
+            "deliveredTime": "2024-05-17T13:12:36Z",
+            "refundDoc": "0",
+            "refundType": "0",
+            "print": "S",
+            "serviceDate": "0001-01-01T00:00:00Z",
+            "hash": "DjQb7L9Zx+33V3byhf8/etiUF8VmoYc3eStrWSm2N1Np9BltUOihZRIiVvFJaGUZc7ffcMS+8C5syEXj6dyTCN0hqaA+/ENkeRDz5vCu40AmUsJ7oWj48K8WcC/Z5VcaL3TYmDHPGskAXC6SBG3gagL83dAnTkEGWjqHFStxYQVVGqkkM6YxcJQVpMKQC8LyMv/zto+9tVsNjThO8QkKyuRFnsOSDGfkL+HHAQvwKT7kvGWw/82gLL+mfDSrDhwHvA5D5oOw4aAJUCLd/+mdBlfAcZ7xvjGCGXyzjeqkXUw8x7nwKef9WpbTO++r/p0vqx4U7w3FWdonI2uUntCBfo8dh2GmlqHZlDRbbNmEu+hQXgvlXmM+m81ACjIlKG5HPBGXzk0ra46qTpLBEe1XH8bEHgrJgiJ2XuXdr48SdWrQ/SPKsNr/kzNve0VoPrWBqlInSvTBAUaUi2M7tFnt9RR78NTmzgmUUKREvPv3NdAg253yNyR8SDIEKiCsYJfqUdXlDPhlGQ7EEAR0E/q2xZteErZeowlsYCvDV4AdlZHmyvcI/lWLDE6K53BS57Ti97cLN4lJo5esJ4SZpPTlex5YnP/g5/XMG7x4nky2zU+PJYDl2WCc9wdeqehR3OgoQBBuSesJMMGFmjXFD8p02V9K2++2vJk+nN41ohQvV7s=",
+            "link": "https://batuz.eus/QRTBAI/?id=TBAI-A99806903-170524-DjQb7L9Zx%2B33V-002\u0026s=FS%20240099Z01\u0026nf=208\u0026i=2.00\u0026cr=036",
+            "fiscalType": "GUIP",
+            "fiscalID": "TBAI-A99806903-170524-DjQb7L9Zx+33V-002"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "R00056",
+                    "name": "Café con leche NC_",
+                    "price": 2,
+                    "basePrice": 1.8182,
+                    "tariffPrice": 2
+                },
+                "qty": 1,
+                "unitOfMeasure": "UD",
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 1.82,
+                "netAmount": 1.8182,
+                "totalAmount": 2,
+                "taxRuleId": "IVA10",
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "ruleId": "IVA10",
+                        "rate": 10,
+                        "baseAmount": 1.8182,
+                        "taxAmount": 0.1818,
+                        "totalAmount": 2
+                    }
+                ],
+                "comments": {},
+                "status": "active",
+                "businessSource": "B",
+                "rule": "EPL",
+                "startTime": "2024-05-17T13:12:32.123Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "group": "user,time",
+                "kitchen": {
+                    "producedQty": 1,
+                    "producedTime": "2024-05-17T13:12:37Z",
+                    "status": "FI",
+                    "deliveryOrder": 6,
+                    "deliveryName": "Cafés",
+                    "noteGroup": ""
+                },
+                "sysData": {
+                    "created": "0001-01-01T00:00:00Z",
+                    "edited": "2024-05-17T13:12:32.123Z",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S",
+                "agent": "78968761D",
+                "agentName": "ACS"
+            }
+        ],
+        "operator": "78968761D",
+        "attendedBy": "78968761D",
+        "attendedByName": "ACS",
+        "location": {
+            "zone": "R002BAR",
+            "zoneName": "Barra",
+            "spot": "10",
+            "spotName": "Mesa 10"
+        },
+        "tariff": {
+            "code": "R001",
+            "name": "Venta Rest. Barra",
+            "date": "20240517"
+        },
+        "owner": "Z01",
+        "lock": {
+            "owner": "Z01",
+            "status": "FI",
+            "time": "2024-05-17T13:12:37.19Z"
+        },
+        "lastModifiedLine": 0,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 1,
+            "deliveredProducts": 1,
+            "soldProducts": 1,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "properties": [
+            {
+                "name": "IDOrder",
+                "value": "P010"
+            }
+        ],
+        "production": {
+            "printed": "S",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    },
+    "error": null
+}

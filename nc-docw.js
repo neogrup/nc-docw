@@ -268,7 +268,15 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                     </div>
                   </template>
                 </div>
-                <div class$="[[classNameStatus]]" style="margin-top: 5px;">{{localize(statusExplain)}}</div>
+                <div class="row-center">
+                  <div class="row-center" style="width: 60%">
+                    <div class$="[[classNameStatus]]" style="margin-top: 5px;">{{localize(statusExplain)}}</div>
+                  </div>
+                  <div class="row-center" >
+                    <div class="line-content-status closed" style="margin-top: 5px;">{{data.data.subTypeExplain}}</div>
+                  </div>
+                </div>
+                
               </div>
 
               <template is="dom-if" if="{{showRescueContainer}}">
@@ -288,6 +296,26 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                     <iron-icon icon="icons:description"></iron-icon>
                     <div>[[rescueNumber]]</div>
                     <div style="font-weight: bolder;margin-left: 10px;">[[rescueInvoice]]</div>
+                  </div>
+                </div>
+              </template>
+
+              <template is="dom-if" if="{{data.data.fiscal.fiscalType}}">
+                <div class$="[[classNameInvoiceContainer]]">
+                  <div><b>{{localize('DOCW_FISCAL_TITLE')}}</b></div>
+                  <div class="row-center">
+                    <div class="row-center" style="width: 60%">
+                      <iron-icon icon="device:sd-storage"></iron-icon>
+                      <div>[[data.data.fiscal.fiscalType]]</div>
+                    </div>
+                    <div class="row-center">
+                      <template is="dom-if" if="[[data.data.fiscal.link]]">
+                        <div><a href="[[data.data.fiscal.link]]">[[data.data.fiscal.fiscalID]]</a></div>
+                      </template>
+                      <template is="dom-if" if="[[!data.data.fiscal.link]]">
+                        <div>[[data.data.fiscal.fiscalID]]</div>
+                      </template>
+                    </div>
                   </div>
                 </div>
               </template>

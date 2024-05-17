@@ -273,7 +273,13 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                     <div class$="[[classNameStatus]]" style="margin-top: 5px;">{{localize(statusExplain)}}</div>
                   </div>
                   <div class="row-center" >
-                    <div class="line-content-status closed" style="margin-top: 5px;">{{data.data.subTypeExplain}}</div>
+                    <template is="dom-if" if="[[data.data.subTypeExplain]]">
+                      <div class="line-content-status closed" style="margin-top: 5px;">{{data.data.subTypeExplain}}</div>
+                    </template>  
+                    <template is="dom-if" if="[[!data.data.subTypeExplain]]">
+                    <div class="line-content-status closed" style="margin-top: 5px;">{{data.data.subType}}</div>
+                    </template>
+                    
                   </div>
                 </div>
                 

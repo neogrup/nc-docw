@@ -316,7 +316,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                     </div>
                     <div class="row-center">
                       <template is="dom-if" if="[[data.data.fiscal.link]]">
-                        <div><a href="[[data.data.fiscal.link]]">[[data.data.fiscal.fiscalID]]</a></div>
+                        <div><a href="[[data.data.fiscal.link]]" target="_blank">[[data.data.fiscal.fiscalID]]</a></div>
                       </template>
                       <template is="dom-if" if="[[!data.data.fiscal.link]]">
                         <div>[[data.data.fiscal.fiscalID]]</div>

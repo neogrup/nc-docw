@@ -36,7 +36,9 @@
             "loyalty": {},
             "taxIdentification": {},
             "contact": {},
-            "totalClients": 2
+            "totalClients": 2,
+            "category":"04",
+            "categoryExplain":"Cliente de francia"
         },
         "fiscal": {
             "documentSerie": "FS 240099Z01",

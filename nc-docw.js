@@ -489,6 +489,14 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                       <div class="line-content-customer-postal-address-detail">[[_getFullPostalAddressDetail(data.data.buyerParty.postalAddress)]]</div>
                     </div>
                   </template>
+                  <template is="dom-if" if="[[_lineHasValue(data.data.buyerParty.categoryExplain)]]">
+                    <div class="row-center row-padding-vertical">
+                      <div>
+                        <iron-icon icon="accessibility"></iron-icon>  
+                      </div>
+                      <div class="line-content-customer-name">[[data.data.buyerParty.categoryExplain]]</div>
+                    </div>
+                  </template>
                 </div>
 
                 <template is="dom-if" if="{{showCustomerLoyalty}}">

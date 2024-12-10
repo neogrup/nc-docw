@@ -21,7 +21,7 @@
   "author": "marcel.miguel@neogrup.com",
   "license": "MIT",
   "dependencies": {
-    "@neogrup/nc-doc": "^2.1.21",
+    "@neogrup/nc-doc": "^2.1.22",
     "@neogrup/nc-icons": "^1.0.6",
     "@polymer/app-localize-behavior": "^3.0.0",
     "@polymer/iron-ajax": "^3.0.0",

@@ -8,6 +8,13 @@
         "subTypeExplain": "Venta",
         "order": "600010",
         "date": "20240517",
+        "shopInfo": {
+            "name": "Restaurante ' Granada",
+            "address":"c/corina, 12",
+            "postalCode":"18012",
+            "city":"Granada",
+            "country":"Spain"
+        },
         "shopCode": "R002",
         "shopName": "Restaurante ' Granada",
         "status": "closed",
@@ -127,7 +134,8 @@
             "hash": "DjQb7L9Zx+33V3byhf8/etiUF8VmoYc3eStrWSm2N1Np9BltUOihZRIiVvFJaGUZc7ffcMS+8C5syEXj6dyTCN0hqaA+/ENkeRDz5vCu40AmUsJ7oWj48K8WcC/Z5VcaL3TYmDHPGskAXC6SBG3gagL83dAnTkEGWjqHFStxYQVVGqkkM6YxcJQVpMKQC8LyMv/zto+9tVsNjThO8QkKyuRFnsOSDGfkL+HHAQvwKT7kvGWw/82gLL+mfDSrDhwHvA5D5oOw4aAJUCLd/+mdBlfAcZ7xvjGCGXyzjeqkXUw8x7nwKef9WpbTO++r/p0vqx4U7w3FWdonI2uUntCBfo8dh2GmlqHZlDRbbNmEu+hQXgvlXmM+m81ACjIlKG5HPBGXzk0ra46qTpLBEe1XH8bEHgrJgiJ2XuXdr48SdWrQ/SPKsNr/kzNve0VoPrWBqlInSvTBAUaUi2M7tFnt9RR78NTmzgmUUKREvPv3NdAg253yNyR8SDIEKiCsYJfqUdXlDPhlGQ7EEAR0E/q2xZteErZeowlsYCvDV4AdlZHmyvcI/lWLDE6K53BS57Ti97cLN4lJo5esJ4SZpPTlex5YnP/g5/XMG7x4nky2zU+PJYDl2WCc9wdeqehR3OgoQBBuSesJMMGFmjXFD8p02V9K2++2vJk+nN41ohQvV7s=",
             "link": "https://batuz.eus/QRTBAI/?id=TBAI-A99806903-170524-DjQb7L9Zx%2B33V-002\u0026s=FS%20240099Z01\u0026nf=208\u0026i=2.00\u0026cr=036",
             "fiscalType": "GUIP",
-            "fiscalID": "TBAI-A99806903-170524-DjQb7L9Zx+33V-002"
+            "fiscalID": "TBAI-A99806903-170524-DjQb7L9Zx+33V-002",
+            "urlNeo":"https://cloudtest.neogrup.com/doc/index.html?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzIjoiTkdSUFYwMDFSMDAyIiwiZCI6IjIwMjUwMTA4IiwibyI6IjYwMDAwMSJ9.1h3b8AHeIns1VTbpWDfi6MqpFZzc7gQFiLbyviM40A0"
         },
         "lines": [
             {

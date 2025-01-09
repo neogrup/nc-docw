@@ -18,6 +18,7 @@ import '@polymer/iron-icons/maps-icons.js';
 import '@polymer/iron-icons/social-icons.js';
 import '@polymer/iron-icons/hardware-icons.js';
 import '@polymer/iron-icons/communication-icons.js';
+import '@polymer/paper-tooltip/paper-tooltip.js';
 import { AppLocalizeBehavior } from '@polymer/app-localize-behavior/app-localize-behavior.js';
 import { mixinBehaviors } from '@polymer/polymer/lib/legacy/class.js';
 import { MixinDoc } from './nc-docw-behavior.js';
@@ -236,7 +237,13 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                 <div class="row-center">
                   <div class="row-center" style="width: 60%">
                     <iron-icon icon="maps:store-mall-directory"></iron-icon>
-                    <div>[[shopName]]</div>
+                    <div id="lblShopName">[[shopName]]</div>
+                    <template is="dom-if" if="[[data.data.shopInfo.name]]">
+                      <paper-tooltip for="lblShopName" fit-to-visible-bounds>[[data.data.shopInfo.address]]
+                        <br/>[[data.data.shopInfo.postalCode]]&nbsp;[[data.data.shopInfo.city]] 
+                        <br/>[[data.data.shopInfo.phone]]
+                      </paper-tooltip>
+                    </template>
                   </div>
                   <div class="row-center" style="width: 40%">
                     <iron-icon icon="icons:event"></iron-icon>
@@ -256,7 +263,13 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
                 <div class="row-center">
                   <div class="row-center" style="width: 60%">
                     <iron-icon icon="icons:description"></iron-icon>
-                    <div style="font-weight: bolder;">[[data.data.order]]</div>
+                    <template is="dom-if" if="[[data.data.fiscal.urlNeo]]">
+                      <div><a href="[[data.data.fiscal.urlNeo]]" target="_blank">[[data.data.order]]</a></div>
+                    </template>
+                    <template is="dom-if" if="[[!data.data.fiscal.urlNeo]]">
+                      <div style="font-weight: bolder;">[[data.data.order]]</div>
+                    </template>
+
                     <div style="margin-left: 10px;">[[invoice]]</div>
                   </div>
                   <template is="dom-if" if="[[!hideIdOrderIcon]]">
@@ -1312,6 +1325,6 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
     //this.$.getTicketLog.generateRequest();
     // TODO get log when clicked
   }
-  
+
 }
 window.customElements.define('nc-docw', NcDocW);

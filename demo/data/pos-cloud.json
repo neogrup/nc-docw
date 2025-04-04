@@ -1,0 +1,221 @@
+{
+    "apiVersion": "1",
+    "systemTime": "2025-04-04T10:02:06.133058748Z",
+    "data": {
+        "_id": "67ef8464ca367d5477cb30e6",
+        "version": "0.4",
+        "type": "ticket",
+        "subType": "CON",
+        "subTypeExplain": "Venta",
+        "order": "600001",
+        "date": "20250404",
+        "shopId": "588b2ea415b03f610afbadf8",
+        "shopCode": "R002",
+        "shopName": "Restaurante ' Granada PMIX",
+        "productTree": "000000000000000000000000",
+        "status": "closed",
+        "sysData": {
+            "created": "2025-04-04T05:03:50.52Z",
+            "createdBy": "ACS",
+            "edited": "2025-04-04T09:04:01.329Z",
+            "editedBy": "ACS",
+            "editing": "2025-04-04T07:04:01.329Z",
+            "editingBy": "ACS",
+            "sent": "2025-04-04T07:04:01.372Z"
+        },
+        "buyerParty": {
+            "id": "000000000000000000000000",
+            "code": "00000",
+            "name": "Contado",
+            "loyalty": {},
+            "taxIdentification": {},
+            "contact": {}
+        },
+        "fiscal": {
+            "type": "FS",
+            "documentSerie": "25SGZ01",
+            "documentNumber": "00071",
+            "currency": {
+                "code": "EUR",
+                "symbol": "€",
+                "decimals": 0,
+                "decimalsUnitPrice": 0,
+                "decimalsLineAmount": 0
+            },
+            "quantity": {
+                "decimals": 0
+            },
+            "priceWithTaxes": "S",
+            "taxes": [
+                {
+                    "id": "IVA",
+                    "ruleId": "IVA21",
+                    "rate": 21,
+                    "baseAmount": 8.26,
+                    "taxAmount": 1.73,
+                    "totalAmount": 9.99
+                }
+            ],
+            "totals": {
+                "grossAmount": 8.26,
+                "netAmount": 8.26,
+                "totalAmount": 9.99,
+                "deliveredAmount": 9.99,
+                "subTotal": 9.99
+            },
+            "payments": [
+                {
+                    "id": 1,
+                    "amount": 9.99,
+                    "mean": "MET",
+                    "dueDate": "2025-04-04T07:04:01.137Z",
+                    "sysData": {
+                        "created": "2025-04-04T07:04:01.137Z",
+                        "createdBy": "ACS",
+                        "edited": "2025-04-04T07:04:01.137Z",
+                        "editedBy": "ACS",
+                        "editing": "2025-04-04T07:04:01.137Z",
+                        "editingBy": "ACS",
+                        "sent": "0001-01-01T00:00:00Z"
+                    },
+                    "currency": "EUR",
+                    "currencySymbol": "€",
+                    "drawer": "R00401",
+                    "amountCurrency": 9.99,
+                    "affectPrice": "S",
+                    "Status": ""
+                }
+            ],
+            "paymentsSummary": [
+                {
+                    "id": 1,
+                    "idOut": -1,
+                    "idTip": -1,
+                    "mean": "MET",
+                    "meanName": "Metálico",
+                    "total": 9.99,
+                    "in": 9.99,
+                    "config": {
+                        "code": "MET",
+                        "name": "Metálico",
+                        "urlImage": "imgpay/R002/Z01/PagosCobros/Metalico.png",
+                        "urlImageWorking": "imgpay/R002/Z01/PagosCobros/Metalico.gif",
+                        "behavior": {
+                            "askAmount": "S"
+                        }
+                    },
+                    "currency": "EUR",
+                    "currencySymbol": "€"
+                }
+            ],
+            "owner": "Z01",
+            "drawer": "R00401",
+            "closedTime": "2025-04-04T07:04:01.329Z",
+            "delivered": "S",
+            "deliveredTime": "2025-04-04T07:04:01.329Z",
+            "print": "S",
+            "serviceDate": "0001-01-01T00:00:00Z",
+            "hash": "d463JmzKfwX7JFS6gxNt32kLX61xtpsUgoxgJ6uojhuj7mMACdvNEv1nMg/aT5bP1ddw5RJlUcBmpRlK/zQsnMh4ToXHXSP7G3fzFztZ8JEvZIjz7gAS76Mnkgmn1gQNUR3394MzTQpz0owDxjt4+F398xsajfKKsfdduSDz/fY=",
+            "urlNeo": "https://cloudtest.neogrup.com/getdoc/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzIjoiTkdSUFYwMDFSMDAyIiwiZCI6IjIwMjUwNDA0IiwibyI6IjYwMDAwMSJ9.BKEJ6-L3oQRK3vr0hD3zBQ9KBU5j4DtIwF18Gu_Jiyw"
+        },
+        "lines": [
+            {
+                "id": 1,
+                "product": {
+                    "id": "R00001",
+                    "name": "Coca Cola lata2",
+                    "price": 9.99,
+                    "basePrice": 8.256198347107437,
+                    "tariffPrice": 9.99
+                },
+                "qty": 1,
+                "unitOfMeasure": "UD",
+                "format": {
+                    "factor": 1,
+                    "qty": 1
+                },
+                "grossQty": 1,
+                "grossAmount": 8.26,
+                "netAmount": 8.2562,
+                "totalAmount": 9.99,
+                "taxRuleId": "IVA21",
+                "taxes": [
+                    {
+                        "id": "IVA",
+                        "ruleId": "IVA21",
+                        "rate": 21,
+                        "baseAmount": 8.2562,
+                        "taxAmount": 1.7338,
+                        "totalAmount": 9.99
+                    }
+                ],
+                "comments": {},
+                "businessSource": "B",
+                "rule": "EPL",
+                "startTime": "2025-04-04T07:03:52.881Z",
+                "endTime": "0001-01-01T00:00:00Z",
+                "group": "user,time",
+                "kitchen": {
+                    "producedTime": "0001-01-01T00:00:00Z",
+                    "status": "PE",
+                    "deliveryOrder": 1,
+                    "deliveryName": "Bebidas",
+                    "noteGroup": "0000000003"
+                },
+                "sysData": {
+                    "created": "2025-04-04T07:03:52.881Z",
+                    "createdBy": "ACS",
+                    "edited": "2025-04-04T07:03:52.881Z",
+                    "editedBy": "ACS",
+                    "editing": "0001-01-01T00:00:00Z",
+                    "sent": "0001-01-01T00:00:00Z"
+                },
+                "affectPrice": "S",
+                "agent": "78968761D",
+                "agentName": "ACS"
+            }
+        ],
+        "operator": "78968761D",
+        "attendedBy": "78968761D",
+        "attendedByName": "ACS",
+        "location": {
+            "zone": "R002BAR",
+            "zoneName": "Barra",
+            "spot": "09",
+            "spotName": "Mesa 9"
+        },
+        "tariff": {
+            "code": "R001",
+            "date": "20250404"
+        },
+        "owner": "Z01",
+        "lock": {
+            "time": "0001-01-01T00:00:00Z"
+        },
+        "lastModifiedLine": 1,
+        "stats": {
+            "printProformaCount": 0,
+            "printInvoiceCount": 0,
+            "deliveredProducts": 1,
+            "soldProducts": 1,
+            "producedProductsPF": 0,
+            "noProforma": "N"
+        },
+        "production": {
+            "printed": "N",
+            "pager": {
+                "id": "",
+                "assignTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        "shopInfo": {
+            "name": "Restaurante ' Granada PMIX",
+            "shopId": "000000000000000000000000",
+            "shop": "NGRPV001R002",
+            "address": "C/ San Rafael, 3",
+            "postalCode": "18009",
+            "city": "Granada"
+        }
+    },
+    "error": null
+}

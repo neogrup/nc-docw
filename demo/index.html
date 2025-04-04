@@ -55,7 +55,7 @@ Copyright (c) 2017 Neo
 
           <iron-ajax id="getDoc"
               auto
-              url="data/pos-fiscal.json"
+              url="data/pos-cloud.json"
               method="get"
               handle-as="json"
               last-response="{{dataDoc}}">
@@ -75,6 +75,7 @@ Copyright (c) 2017 Neo
                 data="[[dataDoc]]"
                 ticket-log-from-list-data="[[ticketLogFromListData]]"
                 language="es"
+                force-utc
                 show-line-delivery-order
                 _show-line-group-info
                 _show-line-production-status

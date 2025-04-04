@@ -16,7 +16,12 @@ let ncDocWBehavior = (base) =>
         language: {
           type: String,
           observer: '_languageChanged'
-        }
+        },
+        forceUtc: {
+          type: Boolean,
+          value: false,
+          notify: true
+        },
       }
     }
 
@@ -43,7 +48,11 @@ let ncDocWBehavior = (base) =>
       let dateText = "";
       if (date) {
         // Check "date" UTC
-        if (date.substr(-1,1).toUpperCase() === "Z"){
+        if (this.forceUtc)  {
+          dateText = moment.utc(date).local().format(lFormat);
+          return dateText;
+        }
+        if (date.substr(-1,1).toUpperCase() === "Z") {
           dateText = moment.utc(date).format(lFormat);
         } else {
           dateText = moment(date).format(lFormat);

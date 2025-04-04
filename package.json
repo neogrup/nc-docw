@@ -10,7 +10,7 @@
     "url": "git+https://github.com/neogrup/nc-docw.git"
   },
   "name": "@neogrup/nc-docw",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "resolutions": {
     "inherits": "2.0.3",
     "samsam": "1.1.3",
@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@neogrup/nc-doc": "^2.1.22",
+    "@neogrup/nc-docw": "file:",
     "@neogrup/nc-icons": "^1.0.6",
     "@polymer/app-localize-behavior": "^3.0.0",
     "@polymer/iron-ajax": "^3.0.0",

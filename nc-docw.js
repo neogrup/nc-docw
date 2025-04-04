@@ -983,7 +983,7 @@ class NcDocW extends mixinBehaviors([AppLocalizeBehavior], MixinDoc(PolymerEleme
 
     this.shopName = (this.data.data.shopName !== "") ? this.data.data.shopName : this.data.data.shopCode;
 
-    this.statusExplain = (this.data.data.statusExplain) ? this.data.data.statusExplain : "opened";
+    this.statusExplain = (this.data.data.statusExplain) ? this.data.data.statusExplain : this.data.data.status;
 
     this.showBooking = false;
     this.showComments = false;

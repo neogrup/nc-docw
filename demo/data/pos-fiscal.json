@@ -18,7 +18,7 @@
         "shopCode": "R002",
         "shopName": "Restaurante ' Granada",
         "status": "closed",
-        "statusExplain": "closed",
+        "statusExplain_": "closed",
         "sysData": {
             "created": "2024-05-17T13:12:31Z",
             "createdBy": "78968761D",

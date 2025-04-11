@@ -10,7 +10,7 @@
     "url": "git+https://github.com/neogrup/nc-docw.git"
   },
   "name": "@neogrup/nc-docw",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "publishConfig": {
     "access": "public"
   },
@@ -24,7 +24,7 @@
   "author": "marcel.miguel@neogrup.com",
   "license": "MIT",
   "dependencies": {
-    "@neogrup/nc-doc": "^2.1.25",
+    "@neogrup/nc-doc": "^2.1.26",
     "@neogrup/nc-docw": "file:",
     "@neogrup/nc-icons": "^1.0.6",
     "@polymer/app-localize-behavior": "^3.0.0",
